@@ -583,16 +583,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons01 li a {
 	display: inline-block;
 	width: auto;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	padding: 0 1.25rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
 	vertical-align: middle;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 1.25rem);
+	padding-left: calc(0.025rem + 0.75rem);
 	font-size: 0.75em;
 	font-weight: 400;
-	border-radius: 0rem;
+	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -613,16 +613,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons02 li a {
 	display: inline-block;
 	width: auto;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	padding: 0 1.25rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
 	vertical-align: middle;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 1.25rem);
+	padding-left: calc(0.025rem + 0.75rem);
 	font-size: 0.75em;
 	font-weight: 400;
-	border-radius: 0rem;
+	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -643,16 +643,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons04 li a {
 	display: inline-block;
 	width: auto;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	padding: 0 1.25rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
 	vertical-align: middle;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 1.25rem);
+	padding-left: calc(0.025rem + 0.75rem);
 	font-size: 0.75em;
 	font-weight: 400;
-	border-radius: 0rem;
+	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -673,16 +673,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons03 li a {
 	display: inline-block;
 	width: auto;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	padding: 0 1.25rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
 	vertical-align: middle;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 1.25rem);
+	padding-left: calc(0.025rem + 0.75rem);
 	font-size: 0.75em;
 	font-weight: 400;
-	border-radius: 0rem;
+	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -1286,7 +1286,7 @@ th {
 	
 	#buttons01 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 1.25rem);
+		padding-left: calc(0.025rem + 0.75rem);
 		font-size: 0.75em;
 	}
 	
@@ -1296,7 +1296,7 @@ th {
 	
 	#buttons02 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 1.25rem);
+		padding-left: calc(0.025rem + 0.75rem);
 		font-size: 0.75em;
 	}
 	
@@ -1306,7 +1306,7 @@ th {
 	
 	#buttons04 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 1.25rem);
+		padding-left: calc(0.025rem + 0.75rem);
 		font-size: 0.75em;
 	}
 	
@@ -1316,7 +1316,7 @@ th {
 	
 	#buttons03 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 1.25rem);
+		padding-left: calc(0.025rem + 0.75rem);
 		font-size: 0.75em;
 	}
 	
