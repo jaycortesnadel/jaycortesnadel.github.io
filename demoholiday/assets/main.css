@@ -145,7 +145,6 @@ a[onclick]:not([href]) {
 	text-align: var(--alignment);
 	z-index: 1;
 	background-color: transparent;
-	box-shadow: 0rem 3rem 3.125rem 0rem rgba(44,42,54,0.451);
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	transition: opacity 1.25s ease 0s,transform 1.25s ease 0s;
 }
