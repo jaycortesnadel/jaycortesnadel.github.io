@@ -1,0 +1,10 @@
+@media (max-width: 980px) {
+	body:before {
+		flex-grow: 1;
+		flex-shrink: 0;
+		max-height: 45vh;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+}
