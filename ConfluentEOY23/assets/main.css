@@ -10,7 +10,24 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #000000;
+}
+
+body:before {
+	background-attachment: scroll;
+	content: '';
+	display: block;
+	height: var(--background-height);
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: scale(1);
+	width: 100vw;
+	z-index: 0;
+	background-image: linear-gradient(89deg, #14449A 23%, #040531 100%);
+	background-position: 0% 0%;
+	background-repeat: repeat;
+	background-size: auto;
 }
 
 :root {
@@ -592,7 +609,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container01 > .wrapper {
 	display: inline-block;
 	width: 50rem;
-	background-color: #000000;
+	background-color: transparent;
 }
 
 #container01 > .wrapper > .inner {
@@ -724,7 +741,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container02 > .wrapper {
 	display: inline-block;
 	width: 50rem;
-	background-color: #000000;
+	background-color: transparent;
 }
 
 #container02 > .wrapper > .inner {
@@ -857,7 +874,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container04 > .wrapper {
 	display: inline-block;
 	width: 50rem;
-	background-color: #000000;
+	background-color: transparent;
 }
 
 #container04 > .wrapper > .inner {
