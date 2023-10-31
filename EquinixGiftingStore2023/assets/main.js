@@ -2579,21 +2579,5 @@
 			mobile: true,
 			mobileNavigation: true,
 		});
-	
-	// Gallery: gallery10.
-		_lightboxGallery.init({
-			id: 'gallery10',
-			navigation: true,
-			mobile: true,
-			mobileNavigation: true,
-		});
-	
-	// Gallery: gallery05.
-		_lightboxGallery.init({
-			id: 'gallery05',
-			navigation: true,
-			mobile: true,
-			mobileNavigation: true,
-		});
 
 })();

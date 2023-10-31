@@ -634,6 +634,27 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text15 {
+	text-align: justify;
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text15 a {
+	text-decoration: underline;
+}
+
+#text15 a:hover {
+	text-decoration: none;
+}
+
+#text15 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text11 {
 	text-align: justify;
 	color: #000000;
@@ -1904,16 +1925,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #gallery09 .inner {
-	max-width: 20rem;
+	max-width: 43rem;
 }
 
 #gallery09 ul li {
-	border-radius: 0rem;
+	border-radius: 1.5rem;
 	display: inline-block;
 }
 
 #gallery09 ul li .frame {
-	border-radius: 0rem;
+	border-radius: 1.5rem;
 }
 
 #gallery09 ul {
@@ -1927,72 +1948,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery09 ul li img {
 	height: auto;
-	max-height: 23.25rem;
-}
-
-#gallery09 ul li .thumbnail img {
-	transition: none;
-}
-
-#gallery10 .inner {
-	max-width: 20rem;
-}
-
-#gallery10 ul li {
-	border-radius: 0rem;
-	display: inline-block;
-}
-
-#gallery10 ul li .frame {
-	border-radius: 0rem;
-}
-
-#gallery10 ul {
-	gap: 1rem;
-}
-
-#gallery10 ul li .thumbnail {
-	display: block;
-	transition: none;
-}
-
-#gallery10 ul li img {
-	height: auto;
-	max-height: 23.25rem;
-}
-
-#gallery10 ul li .thumbnail img {
-	transition: none;
-}
-
-#gallery05 .inner {
-	max-width: 100%;
-}
-
-#gallery05 ul li {
-	border-radius: 0rem;
-	display: inline-block;
-}
-
-#gallery05 ul li .frame {
-	border-radius: 0rem;
-}
-
-#gallery05 ul {
-	gap: 1rem;
-}
-
-#gallery05 ul li .thumbnail {
-	display: block;
-	transition: none;
-}
-
-#gallery05 ul li img {
-	height: auto;
 	max-height: 50rem;
 }
 
-#gallery05 ul li .thumbnail img {
+#gallery09 ul li .thumbnail img {
 	transition: none;
 }
 
@@ -2270,6 +2229,13 @@ th {
 	}
 	
 	#text12 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.625em;
+		line-height: 1.625;
+	}
+	
+	#text15 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 0.625em;
@@ -2835,14 +2801,6 @@ th {
 	}
 	
 	#gallery09 ul li img {
-		max-height: 17.4375rem;
-	}
-	
-	#gallery10 ul li img {
-		max-height: 17.4375rem;
-	}
-	
-	#gallery05 ul li img {
 		max-height: 37.5rem;
 	}
 	
@@ -2986,6 +2944,10 @@ th {
 		font-size: 0.625em;
 	}
 	
+	#text15 {
+		font-size: 0.625em;
+	}
+	
 	#text11 {
 		font-size: 0.625em;
 	}
@@ -3068,14 +3030,6 @@ th {
 	}
 	
 	#gallery09 ul {
-		gap: 0.75rem;
-	}
-	
-	#gallery10 ul {
-		gap: 0.75rem;
-	}
-	
-	#gallery05 ul {
 		gap: 0.75rem;
 	}
 	
