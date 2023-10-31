@@ -999,15 +999,6 @@
 		
 				},
 				sections = {
-					'sizechart': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-6KPQRTZ36L', { 'page_path': '/#sizechart' });
-								},
-							],
-						},
-					},
 					'thankyou': {
 						events: {
 							onopen: [
