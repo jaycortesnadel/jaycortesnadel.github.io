@@ -860,9 +860,6 @@
 									// Reset section change elements.
 										resetSectionChangeElements(currentSection);
 		
-												// Event: On Close.
-													doEvent(currentSection.id, 'onclose');
-		
 										// Hide.
 											setTimeout(function() {
 												currentSection.style.display = 'none';
@@ -934,9 +931,6 @@
 													section.classList.remove('inactive');
 													section.classList.add('active');
 		
-														// Event: On Open.
-															doEvent(section.id, 'onopen');
-		
 												// Temporarily restore target heights.
 													section.style.minHeight = sectionHeight + 'px';
 													section.style.maxHeight = sectionHeight + 'px';
@@ -978,64 +972,7 @@
 						}
 		
 				},
-				doEvent = function(id, type) {
-		
-					var name = id.split(/-[a-z]+$/)[0], result, i;
-		
-					if (name in sections
-					&&	'events' in sections[name]
-					&&	type in sections[name].events) {
-		
-						for (i in sections[name].events[type]) {
-		
-							result = (sections[name].events[type][i])();
-		
-							if (result === false)
-								delete sections[name].events[type][i];
-		
-						}
-		
-					}
-		
-				},
-				sections = {
-					'orderform': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/#orderform' });
-								},
-							],
-						},
-					},
-					'sizechart': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/#sizechart' });
-								},
-							],
-						},
-					},
-					'thankyou': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/#thankyou' });
-								},
-							],
-						},
-					},
-					'home': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/' });
-								},
-							],
-						},
-					},
-				};
+				sections = {};
 		
 			// Expose doNextScrollPoint, doPreviousScrollPoint, doFirstScrollPoint, doLastScrollPoint.
 				window._nextScrollPoint = doNextScrollPoint;
@@ -1163,9 +1100,6 @@
 		
 					// Activate initial section.
 						initialSection.classList.add('active');
-		
-							// Event: On Open.
-								doEvent(initialId, 'onopen');
 		
 					// Load elements.
 						loadElements(initialSection);
