@@ -341,6 +341,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	-webkit-text-fill-color: currentcolor;
 }
 
+#text05 {
+	color: #515369;
+	font-family: 'Muli', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text05 a {
+	text-decoration: underline;
+}
+
+#text05 a:hover {
+	text-decoration: none;
+}
+
+#text05 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text03 {
 	color: #515369;
 	font-family: 'Muli', sans-serif;
@@ -461,6 +481,44 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	color: #FFFFFF;
 }
 
+#buttons05 {
+	gap: 0rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons05:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#buttons05:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#buttons05 li a {
+	display: inline-block;
+	width: 6.25rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.375rem;
+	vertical-align: middle;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.05rem;
+	padding-left: calc(0.05rem + 0.375rem);
+	font-size: 1em;
+	font-weight: 300;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons05 .button {
+	background-color: #e94600;
+	color: #FFFFFF;
+}
+
 #buttons03 {
 	gap: 0rem;
 	flex-direction: row;
@@ -533,6 +591,44 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons01 .button {
+	background-color: #E94600;
+	color: #FFFFFF;
+}
+
+#buttons04 {
+	gap: 0rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons04:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#buttons04:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#buttons04 li a {
+	display: inline-block;
+	width: 5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.375rem;
+	vertical-align: middle;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.05rem;
+	padding-left: calc(0.05rem + 0.375rem);
+	font-size: 1em;
+	font-weight: 300;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons04 .button {
 	background-color: #000000;
 	color: #FFFFFF;
 }
@@ -581,6 +677,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #image01 .frame img {
+	transition: none;
+}
+
+#image03 .frame {
+	max-width: 100%;
+	width: auto;
+	transition: none;
+}
+
+#image03 .frame img {
+	transition: none;
+}
+
+#image02 .frame {
+	max-width: 100%;
+	width: auto;
+	transition: none;
+}
+
+#image02 .frame img {
 	transition: none;
 }
 
@@ -1400,6 +1516,13 @@ th {
 		margin-bottom: -3.5rem !important;
 	}
 	
+	#text05 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
 	#text03 {
 		letter-spacing: 0rem;
 		width: 100%;
@@ -1439,6 +1562,24 @@ th {
 		font-size: 1em;
 	}
 	
+	#buttons05 {
+		gap: 0rem;
+	}
+	
+	#buttons05:not(:first-child) {
+		margin-top: 1.3125rem !important;
+	}
+	
+	#buttons05:not(:last-child) {
+		margin-bottom: 1.3125rem !important;
+	}
+	
+	#buttons05 li a {
+		letter-spacing: 0.05rem;
+		padding-left: calc(0.05rem + 0.375rem);
+		font-size: 1em;
+	}
+	
 	#buttons03 {
 		gap: 0rem;
 	}
@@ -1470,6 +1611,24 @@ th {
 	}
 	
 	#buttons01 li a {
+		letter-spacing: 0.05rem;
+		padding-left: calc(0.05rem + 0.375rem);
+		font-size: 1em;
+	}
+	
+	#buttons04 {
+		gap: 0rem;
+	}
+	
+	#buttons04:not(:first-child) {
+		margin-top: 1.3125rem !important;
+	}
+	
+	#buttons04:not(:last-child) {
+		margin-bottom: 1.3125rem !important;
+	}
+	
+	#buttons04 li a {
 		letter-spacing: 0.05rem;
 		padding-left: calc(0.05rem + 0.375rem);
 		font-size: 1em;
@@ -1714,11 +1873,19 @@ th {
 		width: 13.875rem;
 	}
 	
+	#buttons05 li a {
+		width: 13.875rem;
+	}
+	
 	#buttons03 li a {
 		width: 13.875rem;
 	}
 	
 	#buttons01 li a {
+		width: 13.875rem;
+	}
+	
+	#buttons04 li a {
 		width: 13.875rem;
 	}
 	
@@ -1760,6 +1927,10 @@ th {
 		margin-bottom: -2.625rem !important;
 	}
 	
+	#text05 {
+		font-size: 1em;
+	}
+	
 	#text03 {
 		font-size: 1em;
 	}
@@ -1776,11 +1947,19 @@ th {
 		gap: 0rem;
 	}
 	
+	#buttons05 {
+		gap: 0rem;
+	}
+	
 	#buttons03 {
 		gap: 0rem;
 	}
 	
 	#buttons01 {
+		gap: 0rem;
+	}
+	
+	#buttons04 {
 		gap: 0rem;
 	}
 	
