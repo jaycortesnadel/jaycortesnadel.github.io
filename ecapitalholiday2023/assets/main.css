@@ -1129,7 +1129,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text03 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 1.5em;
@@ -1152,7 +1152,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text06 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 1em;
@@ -1174,12 +1174,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text08 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #text08 a {
@@ -1196,12 +1196,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text11 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #text11 a {
@@ -1216,6 +1216,28 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text15 {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.025rem;
+	width: calc(100% + 0.025rem);
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#text15 a {
+	text-decoration: underline;
+}
+
+#text15 a:hover {
+	text-decoration: none;
+}
+
+#text15 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text07 {
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
@@ -1223,7 +1245,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #text07 a {
@@ -1245,7 +1267,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #text02 a {
@@ -1260,14 +1282,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text12 {
+#text16 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
+}
+
+#text16 a {
+	text-decoration: underline;
+}
+
+#text16 a:hover {
+	text-decoration: none;
+}
+
+#text16 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text12 {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.025rem;
+	width: calc(100% + 0.025rem);
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
 }
 
 #text12 a {
@@ -1282,14 +1326,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text13 {
+#text17 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
+}
+
+#text17 a {
+	text-decoration: underline;
+}
+
+#text17 a:hover {
+	text-decoration: none;
+}
+
+#text17 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text13 {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.025rem;
+	width: calc(100% + 0.025rem);
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
 }
 
 #text13 a {
@@ -1304,9 +1370,31 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text10 {
+#text14 {
 	color: #000000;
 	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.025rem;
+	width: calc(100% + 0.025rem);
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#text14 a {
+	text-decoration: underline;
+}
+
+#text14 a:hover {
+	text-decoration: none;
+}
+
+#text14 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text10 {
+	color: #000000;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 1em;
@@ -1328,7 +1416,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text09 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 1em;
@@ -1350,12 +1438,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text01 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 #text01 a {
@@ -1373,7 +1461,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text05 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 1em;
@@ -1395,12 +1483,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text04 {
 	color: #4D4D4D;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 #text04 a {
@@ -1450,7 +1538,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.75rem;
 	padding: 0 0.875rem;
 	vertical-align: middle;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	padding-left: calc(0.025rem + 0.875rem);
 	font-size: 0.75em;
@@ -1480,7 +1568,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.75rem;
 	padding: 0 0.875rem;
 	vertical-align: middle;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	padding-left: calc(0.025rem + 0.875rem);
 	font-size: 0.75em;
@@ -1551,6 +1639,36 @@ hr:before {
 }
 
 #divider05:before {
+	width: 32rem;
+	background-color: #FF6900;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider03:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider03:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider03:before {
+	width: 32rem;
+	background-color: #FF6900;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider01:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider01:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider01:before {
 	width: 32rem;
 	background-color: #FF6900;
 	height: 1px;
@@ -1908,11 +2026,11 @@ th {
 
 #table05 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.125rem;
 	font-size: 0.5em;
 	line-height: 1.375;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 #table05 a {
@@ -1939,11 +2057,11 @@ th {
 
 #table06 {
 	color: #000000;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.125rem;
 	font-size: 0.5em;
 	line-height: 1.375;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 #table06 a {
@@ -2644,6 +2762,13 @@ th {
 		line-height: 1.75;
 	}
 	
+	#text15 {
+		letter-spacing: 0.021875rem;
+		width: calc(100% + 0.021875rem);
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
 	#text07 {
 		letter-spacing: 0.021875rem;
 		width: calc(100% + 0.021875rem);
@@ -2658,6 +2783,13 @@ th {
 		line-height: 1.75;
 	}
 	
+	#text16 {
+		letter-spacing: 0.021875rem;
+		width: calc(100% + 0.021875rem);
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
 	#text12 {
 		letter-spacing: 0.021875rem;
 		width: calc(100% + 0.021875rem);
@@ -2665,7 +2797,21 @@ th {
 		line-height: 1.75;
 	}
 	
+	#text17 {
+		letter-spacing: 0.021875rem;
+		width: calc(100% + 0.021875rem);
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
 	#text13 {
+		letter-spacing: 0.021875rem;
+		width: calc(100% + 0.021875rem);
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#text14 {
 		letter-spacing: 0.021875rem;
 		width: calc(100% + 0.021875rem);
 		font-size: 0.75em;
@@ -2746,6 +2892,30 @@ th {
 	}
 	
 	#divider05:before {
+		width: 32rem;
+	}
+	
+	#divider03:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider03:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider03:before {
+		width: 32rem;
+	}
+	
+	#divider01:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider01:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider01:before {
 		width: 32rem;
 	}
 	
@@ -2950,6 +3120,10 @@ th {
 		font-size: 0.75em;
 	}
 	
+	#text15 {
+		font-size: 0.75em;
+	}
+	
 	#text07 {
 		font-size: 0.75em;
 	}
@@ -2958,11 +3132,23 @@ th {
 		font-size: 0.75em;
 	}
 	
+	#text16 {
+		font-size: 0.75em;
+	}
+	
 	#text12 {
 		font-size: 0.75em;
 	}
 	
+	#text17 {
+		font-size: 0.75em;
+	}
+	
 	#text13 {
+		font-size: 0.75em;
+	}
+	
+	#text14 {
 		font-size: 0.75em;
 	}
 	
