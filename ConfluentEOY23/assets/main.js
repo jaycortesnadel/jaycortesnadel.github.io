@@ -1003,7 +1003,7 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/#form' });
+									gtag('config', 'G-T1GHYKT7F9', { 'page_path': '/#form' });
 								},
 							],
 						},
@@ -1012,7 +1012,7 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/#thankyou' });
+									gtag('config', 'G-T1GHYKT7F9', { 'page_path': '/#thankyou' });
 								},
 							],
 						},
@@ -1021,7 +1021,7 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', { 'page_path': '/' });
+									gtag('config', 'G-T1GHYKT7F9', { 'page_path': '/' });
 								},
 							],
 						},
