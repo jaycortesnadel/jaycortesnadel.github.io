@@ -24,10 +24,10 @@ body:before {
 	transform: scale(1);
 	width: 100vw;
 	z-index: 0;
-	background-image: url('images/bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: linear-gradient(to top, rgba(255,255,255,0.212), rgba(255,255,255,0.212)), url('images/bg.jpg');
+	background-position: 0% 0%, center;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
 	background-color: #FFFFFF;
 }
 
