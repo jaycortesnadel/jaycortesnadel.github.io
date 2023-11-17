@@ -2458,6 +2458,14 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
+	// Gallery: gallery02.
+		_lightboxGallery.init({
+			id: 'gallery02',
+			navigation: true,
+			mobile: true,
+			mobileNavigation: true,
+		});
+	
 	// Gallery: gallery05.
 		_lightboxGallery.init({
 			id: 'gallery05',
