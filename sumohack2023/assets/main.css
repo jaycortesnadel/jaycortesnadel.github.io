@@ -392,21 +392,6 @@ hr:before {
 	border-radius: 0px;
 }
 
-#divider05:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider05:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider05:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
 .container {
 	position: relative;
 }
@@ -724,6 +709,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	-webkit-text-fill-color: currentcolor;
 }
 
+#text01 {
+	text-align: center;
+	color: #FFFFFF;
+	font-family: 'Roboto Serif', serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1.25em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#text01 a {
+	text-decoration: underline;
+}
+
+#text01 a:hover {
+	text-decoration: none;
+}
+
+#text01 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text03 {
 	text-align: center;
 	color: #FFFFFF;
@@ -790,6 +798,149 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text04 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
+}
+
+.buttons {
+	cursor: default;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.buttons li {
+	max-width: 100%;
+}
+
+.buttons li a {
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#buttons02 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons02 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0 0.625rem;
+	vertical-align: middle;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.625rem);
+	font-size: 0.75em;
+	font-weight: 700;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons02 .button {
+	background-color: #47E10C;
+	color: #FFFFFF;
+}
+
+#buttons01 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons01 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	padding: 0 0.625rem;
+	vertical-align: middle;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.625rem);
+	font-size: 0.75em;
+	font-weight: 700;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons01 .button {
+	background-color: #47E10C;
+	color: #FFFFFF;
+}
+
+.table-wrapper {
+	max-width: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.table-inner {
+	display: inline-block;
+	max-width: 100%;
+}
+
+table {
+	direction: var(--site-language-direction);
+	text-align: var(--site-language-alignment);
+	width: 100%;
+}
+
+th {
+	font-weight: bolder;
+	text-align: var(--site-language-alignment);
+}
+
+#table01 table {
+	text-align: center;
+}
+
+#table01 th {
+	text-align: center;
+}
+
+#table01 {
+	color: #FFFFFF;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.875em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table01 a {
+	text-decoration: underline;
+}
+
+#table01 a:hover {
+	text-decoration: none;
+}
+
+#table01 .table-inner {
+	width: 30rem;
+}
+
+#table01 thead {
+	background-color: rgba(255,255,255,0.184);
+}
+
+#table01 th, #table01 td {
+	border: solid 1px #FFFFFF;
+	padding: 0.5rem 0.6875rem;
 }
 
 @media (max-width: 1920px) {
@@ -871,18 +1022,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#divider04:before {
 		width: 3rem;
-	}
-	
-	#divider05:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider05:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider05:before {
-		width: 32rem;
 	}
 	
 	#columns03 {
@@ -1081,6 +1220,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: auto;
 	}
 	
+	#text01 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1.25em;
+		line-height: 1.75;
+	}
+	
 	#text03 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -1101,6 +1247,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 0.75em;
 		line-height: 1.75;
 	}
+	
+	#buttons02 {
+		gap: 0.75rem;
+	}
+	
+	#buttons02 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.625rem);
+		font-size: 0.75em;
+	}
+	
+	#buttons01 {
+		gap: 0.75rem;
+	}
+	
+	#buttons01 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.625rem);
+		font-size: 0.75em;
+	}
+	
+	#table01 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.875em;
+		line-height: 1.75;
+	}
+	
+	#table01 th, #table01 td {
+		padding: 0.5rem 0.6875rem;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1118,6 +1294,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#columns04 > .wrapper > .inner {
 		--spacing: 0.875rem;
+	}
+	
+	#buttons02 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons02 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons01 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
 	}
 }
 
@@ -1164,6 +1360,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 0.75rem;
 	}
 	
+	#text01 {
+		font-size: 1.25em;
+	}
+	
 	#text03 {
 		font-size: 1.25em;
 	}
@@ -1174,5 +1374,17 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#text04 {
 		font-size: 0.75em;
+	}
+	
+	#buttons02 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons01 {
+		gap: 0.5625rem;
+	}
+	
+	#table01 {
+		font-size: 0.875em;
 	}
 }
