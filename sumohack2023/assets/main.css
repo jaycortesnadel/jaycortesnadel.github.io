@@ -175,7 +175,7 @@ a[onclick]:not([href]) {
 	--padding-horizontal: 3rem;
 	--padding-vertical: 3.75rem;
 	--spacing: 1.5rem;
-	--width: 38rem;
+	--width: 39rem;
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	max-width: 100%;
 	position: relative;
@@ -785,7 +785,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 #text04 a {
@@ -931,7 +931,7 @@ th {
 }
 
 #table01 .table-inner {
-	width: 30rem;
+	width: 100%;
 }
 
 #table01 thead {
