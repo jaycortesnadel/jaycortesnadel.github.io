@@ -1008,11 +1008,11 @@
 							],
 						},
 					},
-					'sizechart': {
+					'sizecharts': {
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#sizechart' });
+									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#sizecharts' });
 								},
 							],
 						},
@@ -2524,9 +2524,9 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
-	// Gallery: gallery01.
+	// Gallery: gallery02.
 		_lightboxGallery.init({
-			id: 'gallery01',
+			id: 'gallery02',
 			navigation: true,
 			mobile: true,
 			mobileNavigation: true,
@@ -2535,6 +2535,14 @@
 	// Gallery: gallery03.
 		_lightboxGallery.init({
 			id: 'gallery03',
+			navigation: true,
+			mobile: true,
+			mobileNavigation: true,
+		});
+	
+	// Gallery: gallery01.
+		_lightboxGallery.init({
+			id: 'gallery01',
 			navigation: true,
 			mobile: true,
 			mobileNavigation: true,

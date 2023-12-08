@@ -910,7 +910,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text09 {
 	color: #FFFFFF;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
 	line-height: 1.5;
 	font-weight: 400;
@@ -938,7 +938,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text06 {
 	color: #FFFFFF;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25em;
 	line-height: 1.5;
 	font-weight: 400;
@@ -958,7 +958,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text05 {
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.1rem;
 	width: calc(100% + 0.1rem);
 	font-size: 1em;
@@ -980,7 +980,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text07 {
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.1rem;
 	width: calc(100% + 0.1rem);
 	font-size: 1em;
@@ -1002,7 +1002,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text08 {
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.1rem;
 	width: calc(100% + 0.1rem);
 	font-size: 1em;
@@ -1024,7 +1024,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text03 {
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.1rem;
 	width: calc(100% + 0.1rem);
 	font-size: 1em;
@@ -1047,7 +1047,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text01 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
 	font-size: 1.25em;
@@ -1124,11 +1124,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 1.5rem;
 	padding: 0 0.75rem;
 	vertical-align: middle;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	padding-left: calc(0.025rem + 0.75rem);
 	font-size: 0.75em;
-	font-weight: 700;
+	font-weight: 800;
 	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
@@ -1141,24 +1141,24 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	color: #000000;
 }
 
-#buttons01 {
+#buttons04 {
 	gap: 0.75rem;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#buttons01 li a {
+#buttons04 li a {
 	display: inline-block;
 	width: auto;
-	height: 1.5rem;
-	line-height: 1.5rem;
-	padding: 0 0.75rem;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 1rem;
 	vertical-align: middle;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 0.75rem);
-	font-size: 0.75em;
-	font-weight: 700;
+	padding-left: calc(0.025rem + 1rem);
+	font-size: 0.875em;
+	font-weight: 800;
 	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
@@ -1166,29 +1166,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-#buttons01 .button {
+#buttons04 .button {
 	background-color: #E8DC9E;
 	color: #000000;
 }
 
-#buttons15 {
+#buttons03 {
 	gap: 0.75rem;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#buttons15 li a {
+#buttons03 li a {
 	display: inline-block;
 	width: auto;
-	height: 1.5rem;
-	line-height: 1.5rem;
-	padding: 0 0.75rem;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 1rem;
 	vertical-align: middle;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 0.75rem);
-	font-size: 0.75em;
-	font-weight: 700;
+	padding-left: calc(0.025rem + 1rem);
+	font-size: 0.875em;
+	font-weight: 800;
 	border-radius: 1rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
@@ -1196,7 +1196,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-#buttons15 .button {
+#buttons03 .button {
 	background-color: #E8DC9E;
 	color: #000000;
 }
@@ -1528,45 +1528,45 @@ hr:before {
 	transform: translateX(50%) translateY(-50%);
 }
 
-#gallery01 .inner {
+#gallery02 .inner {
 	max-width: 100%;
 }
 
-#gallery01 ul li {
+#gallery02 ul li {
 	border-radius: 0rem;
 	display: inline-block;
 }
 
-#gallery01 ul li .frame {
+#gallery02 ul li .frame {
 	border-radius: 0rem;
 }
 
-#gallery01 ul li .caption p {
+#gallery02 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
 	color: #FFFFFF;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.75em;
 	line-height: 1.75;
 	font-weight: 400;
 }
 
-#gallery01 ul {
+#gallery02 ul {
 	gap: 0.5rem;
 }
 
-#gallery01 ul li .thumbnail {
+#gallery02 ul li .thumbnail {
 	display: block;
 	transition: none;
 }
 
-#gallery01 ul li img {
+#gallery02 ul li img {
 	height: auto;
 	max-height: 15rem;
 }
 
-#gallery01 ul li .thumbnail img {
+#gallery02 ul li .thumbnail img {
 	transition: none;
 }
 
@@ -1587,7 +1587,7 @@ hr:before {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
 	color: #FFFFFF;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.75em;
 	line-height: 1.75;
@@ -1609,6 +1609,48 @@ hr:before {
 }
 
 #gallery03 ul li .thumbnail img {
+	transition: none;
+}
+
+#gallery01 .inner {
+	max-width: 100%;
+}
+
+#gallery01 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery01 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery01 ul li .caption p {
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#gallery01 ul {
+	gap: 0.5rem;
+}
+
+#gallery01 ul li .thumbnail {
+	display: block;
+	transition: none;
+}
+
+#gallery01 ul li img {
+	height: auto;
+	max-height: 15rem;
+}
+
+#gallery01 ul li .thumbnail img {
 	transition: none;
 }
 
@@ -1638,7 +1680,7 @@ th {
 #table02 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.875em;
 	line-height: 1.75;
@@ -1678,7 +1720,7 @@ th {
 #table01 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.875em;
 	line-height: 1.75;
@@ -1718,7 +1760,7 @@ th {
 #table03 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.875em;
 	line-height: 1.75;
@@ -1758,7 +1800,7 @@ th {
 #table04 {
 	text-align: center;
 	color: #FFFFFF;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
 	font-size: 0.875em;
 	line-height: 1.75;
@@ -2317,24 +2359,24 @@ th {
 		font-size: 0.75em;
 	}
 	
-	#buttons01 {
+	#buttons04 {
 		gap: 0.75rem;
 	}
 	
-	#buttons01 li a {
+	#buttons04 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 0.75rem);
-		font-size: 0.75em;
+		padding-left: calc(0.025rem + 1rem);
+		font-size: 0.875em;
 	}
 	
-	#buttons15 {
+	#buttons03 {
 		gap: 0.75rem;
 	}
 	
-	#buttons15 li a {
+	#buttons03 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 0.75rem);
-		font-size: 0.75em;
+		padding-left: calc(0.025rem + 1rem);
+		font-size: 0.875em;
 	}
 	
 	#footer {
@@ -2417,13 +2459,13 @@ th {
 		background-position: top 0.5rem right 0.5rem;
 	}
 	
-	#gallery01 ul li .caption p {
+	#gallery02 ul li .caption p {
 		letter-spacing: 0.025rem;
 		font-size: 0.75em;
 		line-height: 1.75;
 	}
 	
-	#gallery01 ul li img {
+	#gallery02 ul li img {
 		max-height: 11.25rem;
 	}
 	
@@ -2434,6 +2476,16 @@ th {
 	}
 	
 	#gallery03 ul li img {
+		max-height: 11.25rem;
+	}
+	
+	#gallery01 ul li .caption p {
+		letter-spacing: 0.025rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#gallery01 ul li img {
 		max-height: 11.25rem;
 	}
 	
@@ -2509,22 +2561,22 @@ th {
 		width: 100%;
 	}
 	
-	#buttons01 {
+	#buttons04 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
-	#buttons01 li a {
+	#buttons04 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
 	
-	#buttons15 {
+	#buttons03 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
-	#buttons15 li a {
+	#buttons03 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -2620,19 +2672,19 @@ th {
 		gap: 0.5625rem;
 	}
 	
-	#buttons01 {
+	#buttons04 {
 		gap: 0.5625rem;
 	}
 	
-	#buttons15 {
+	#buttons03 {
 		gap: 0.5625rem;
 	}
 	
-	#gallery01 ul li .caption p {
+	#gallery02 ul li .caption p {
 		font-size: 0.75em;
 	}
 	
-	#gallery01 ul {
+	#gallery02 ul {
 		gap: 0.375rem;
 	}
 	
@@ -2641,6 +2693,14 @@ th {
 	}
 	
 	#gallery03 ul {
+		gap: 0.375rem;
+	}
+	
+	#gallery01 ul li .caption p {
+		font-size: 0.75em;
+	}
+	
+	#gallery01 ul {
 		gap: 0.375rem;
 	}
 	
