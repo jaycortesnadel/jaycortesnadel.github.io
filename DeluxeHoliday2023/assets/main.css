@@ -939,9 +939,9 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text06 {
 	color: #FFFFFF;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
+	font-size: 1em;
 	line-height: 1.5;
-	font-weight: 400;
+	font-weight: 300;
 }
 
 #text06 a {
@@ -1120,13 +1120,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons02 li a {
 	display: inline-block;
 	width: auto;
-	height: 1.5rem;
-	line-height: 1.5rem;
-	padding: 0 0.75rem;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 1rem;
 	vertical-align: middle;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 0.75rem);
+	padding-left: calc(0.025rem + 1rem);
 	font-size: 0.75em;
 	font-weight: 800;
 	border-radius: 1rem;
@@ -2090,7 +2090,7 @@ th {
 	#text06 {
 		letter-spacing: 0rem;
 		width: 100%;
-		font-size: 1.25em;
+		font-size: 1em;
 		line-height: 1.5;
 	}
 	
@@ -2142,7 +2142,7 @@ th {
 	
 	#buttons02 li a {
 		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 0.75rem);
+		padding-left: calc(0.025rem + 1rem);
 		font-size: 0.75em;
 	}
 	
@@ -2424,7 +2424,7 @@ th {
 	}
 	
 	#text06 {
-		font-size: 1.25em;
+		font-size: 1em;
 	}
 	
 	#text05 {
