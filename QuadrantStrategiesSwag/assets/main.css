@@ -698,11 +698,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	--flex-alignment: center;
 	--indent-left: 1;
 	--indent-right: 1;
-}
-
-#container02 > .wrapper {
-	display: inline-block;
-	width: 45rem;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
 	background-color: transparent;
 }
 
@@ -712,6 +711,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	--padding-vertical: 0rem;
 	--spacing: 1rem;
 	padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+#container02 > .wrapper {
+	max-width: 100%;
+	width: 100%;
 }
 
 #container02.default > .wrapper > .inner > * {
