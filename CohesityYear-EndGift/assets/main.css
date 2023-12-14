@@ -360,7 +360,7 @@ body.is-instant:after {
 #image01 .frame {
 	max-width: 100%;
 	width: 950px;
-	border-radius: 3rem;
+	border-radius: 0.75rem;
 	transition: none;
 }
 
