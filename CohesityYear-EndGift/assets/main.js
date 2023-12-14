@@ -999,6 +999,15 @@
 		
 				},
 				sections = {
+					'faq': {
+						events: {
+							onopen: [
+								function() { 
+									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#faq' });
+								},
+							],
+						},
+					},
 					'sizechart1': {
 						events: {
 							onopen: [
