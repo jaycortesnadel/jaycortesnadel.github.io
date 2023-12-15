@@ -928,7 +928,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery03 ul li img {
 	height: auto;
-	max-height: 17.25rem;
+	max-height: 16.5rem;
 }
 
 #gallery03 ul li .thumbnail img {
@@ -973,7 +973,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery01 ul li img {
 	height: auto;
-	max-height: 17.25rem;
+	max-height: 16.5rem;
 }
 
 #gallery01 ul li .thumbnail img {
@@ -1890,7 +1890,7 @@ th {
 	}
 	
 	#gallery03 ul li img {
-		max-height: 12.9375rem;
+		max-height: 12.375rem;
 	}
 	
 	#gallery01 ul li .caption p {
@@ -1900,7 +1900,7 @@ th {
 	}
 	
 	#gallery01 ul li img {
-		max-height: 12.9375rem;
+		max-height: 12.375rem;
 	}
 	
 	#buttons02 {
