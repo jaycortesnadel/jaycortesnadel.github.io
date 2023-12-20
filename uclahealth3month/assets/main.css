@@ -1026,7 +1026,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery02 ul li .thumbnail {
 	display: block;
-	transition: none;
 }
 
 #gallery02 ul li img {
@@ -1035,7 +1034,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #gallery02 ul li .thumbnail img {
-	transition: none;
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery02 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
 }
 
 #gallery03 .inner {
@@ -1057,7 +1060,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery03 ul li .thumbnail {
 	display: block;
-	transition: none;
 }
 
 #gallery03 ul li img {
@@ -1066,7 +1068,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #gallery03 ul li .thumbnail img {
-	transition: none;
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery03 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
 }
 
 #gallery01 .inner {
@@ -1088,7 +1094,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery01 ul li .thumbnail {
 	display: block;
-	transition: none;
 }
 
 #gallery01 ul li img {
@@ -1097,7 +1102,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #gallery01 ul li .thumbnail img {
-	transition: none;
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery01 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
 }
 
 @media (orientation: portrait) {
