@@ -158,7 +158,7 @@ a[onclick]:not([href]) {
 	--padding-horizontal: 2.625rem;
 	--padding-vertical: 1.625rem;
 	--spacing: 1.5rem;
-	--width: 43rem;
+	--width: 37rem;
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	max-width: 100%;
 	position: relative;
