@@ -10,7 +10,25 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #0072CE;
+}
+
+body:before {
+	content: '';
+	display: block;
+	background-attachment: scroll;
+	height: var(--background-height);
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: scale(1);
+	width: 100vw;
+	z-index: 0;
+	background-image: url('images/bg.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: auto;
+	background-color: #FFFFFF;
 }
 
 :root {
@@ -539,6 +557,66 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	white-space: nowrap;
 }
 
+#buttons01 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons01 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
+	vertical-align: middle;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.75rem);
+	font-size: 0.75em;
+	font-weight: 400;
+	border-radius: 1rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons01 .button {
+	background-color: rgba(255,255,255,0.322);
+	color: #FFFFFF;
+}
+
+#buttons02 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons02 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	padding: 0 0.75rem;
+	vertical-align: middle;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.75rem);
+	font-size: 0.75em;
+	font-weight: 400;
+	border-radius: 1rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons02 .button {
+	background-color: rgba(255,255,255,0.322);
+	color: #FFFFFF;
+}
+
 #buttons15 {
 	gap: 0.75rem;
 	flex-direction: row;
@@ -565,67 +643,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons15 .button {
-	background-color: #000000;
-	color: #FFFFFF;
-}
-
-#buttons03 {
-	gap: 0.75rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons03 li a {
-	display: inline-block;
-	width: auto;
-	height: 1.5rem;
-	line-height: 1.5rem;
-	padding: 0 0.75rem;
-	vertical-align: middle;
-	font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 0.75rem);
-	font-size: 0.75em;
-	font-weight: 400;
-	border-radius: 1rem;
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons03 .button {
-	background-color: #000000;
-	color: #FFFFFF;
-}
-
-#buttons04 {
-	gap: 0.75rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons04 li a {
-	display: inline-block;
-	width: auto;
-	height: 1.5rem;
-	line-height: 1.5rem;
-	padding: 0 0.75rem;
-	vertical-align: middle;
-	font-family: 'Source Sans Pro', sans-serif;
-	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 0.75rem);
-	font-size: 0.75em;
-	font-weight: 400;
-	border-radius: 1rem;
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons04 .button {
-	background-color: #000000;
+	background-color: rgba(255,255,255,0.322);
 	color: #FFFFFF;
 }
 
@@ -976,6 +994,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: 100%;
 }
 
+.gallery ul li .caption a, .gallery ul li .caption spoiler-text {
+	pointer-events: auto;
+}
+
 #gallery01 .inner {
 	max-width: 100%;
 }
@@ -1000,7 +1022,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery01 ul li img {
 	height: auto;
-	max-height: 24.75rem;
+	max-height: 50rem;
 }
 
 #gallery01 ul li .thumbnail img {
@@ -1237,31 +1259,31 @@ th {
 		line-height: 1.75;
 	}
 	
+	#buttons01 {
+		gap: 0.75rem;
+	}
+	
+	#buttons01 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.75rem);
+		font-size: 0.75em;
+	}
+	
+	#buttons02 {
+		gap: 0.75rem;
+	}
+	
+	#buttons02 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.75rem);
+		font-size: 0.75em;
+	}
+	
 	#buttons15 {
 		gap: 0.75rem;
 	}
 	
 	#buttons15 li a {
-		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 0.75rem);
-		font-size: 0.75em;
-	}
-	
-	#buttons03 {
-		gap: 0.75rem;
-	}
-	
-	#buttons03 li a {
-		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 0.75rem);
-		font-size: 0.75em;
-	}
-	
-	#buttons04 {
-		gap: 0.75rem;
-	}
-	
-	#buttons04 li a {
 		letter-spacing: 0.025rem;
 		padding-left: calc(0.025rem + 0.75rem);
 		font-size: 0.75em;
@@ -1464,7 +1486,7 @@ th {
 	}
 	
 	#gallery01 ul li img {
-		max-height: 18.5625rem;
+		max-height: 37.5rem;
 	}
 	
 	#table01 {
@@ -1497,32 +1519,32 @@ th {
 		--spacing: 1.3125rem;
 	}
 	
+	#buttons01 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons02 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons02 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
 	#buttons15 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
 	#buttons15 li a {
-		max-width: 32rem;
-		width: 100%;
-	}
-	
-	#buttons03 {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-	
-	#buttons03 li a {
-		max-width: 32rem;
-		width: 100%;
-	}
-	
-	#buttons04 {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-	
-	#buttons04 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -1589,15 +1611,15 @@ th {
 		font-size: 0.75em;
 	}
 	
+	#buttons01 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons02 {
+		gap: 0.5625rem;
+	}
+	
 	#buttons15 {
-		gap: 0.5625rem;
-	}
-	
-	#buttons03 {
-		gap: 0.5625rem;
-	}
-	
-	#buttons04 {
 		gap: 0.5625rem;
 	}
 	
