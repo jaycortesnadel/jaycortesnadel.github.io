@@ -1003,7 +1003,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#orderform' });
+									gtag('config', 'G-74HP9VY6V6', {
+										'page_title': 'Orderform',
+										'page_location': '/#orderform',
+									});
 								},
 							],
 						},
@@ -1012,7 +1015,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#sizecharts' });
+									gtag('config', 'G-74HP9VY6V6', {
+										'page_title': 'Sizecharts',
+										'page_location': '/#sizecharts',
+									});
 								},
 							],
 						},
@@ -1021,7 +1027,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/#thankyou' });
+									gtag('config', 'G-74HP9VY6V6', {
+										'page_title': 'Thankyou',
+										'page_location': '/#thankyou',
+									});
 								},
 							],
 						},
@@ -1030,7 +1039,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-74HP9VY6V6', { 'page_path': '/' });
+									gtag('config', 'G-74HP9VY6V6', {
+										'page_title': 'Home',
+										'page_location': '',
+									});
 								},
 							],
 						},
