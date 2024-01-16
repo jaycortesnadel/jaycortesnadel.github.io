@@ -1003,7 +1003,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-6KPQRTZ36L', { 'page_path': '/#thankyou' });
+									gtag('config', 'G-6KPQRTZ36L', {
+										'page_title': 'Thankyou',
+										'page_location': '/#thankyou',
+									});
 								},
 							],
 						},
@@ -1012,7 +1015,10 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-6KPQRTZ36L', { 'page_path': '/' });
+									gtag('config', 'G-6KPQRTZ36L', {
+										'page_title': 'Home',
+										'page_location': '',
+									});
 								},
 							],
 						},
