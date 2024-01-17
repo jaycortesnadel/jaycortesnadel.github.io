@@ -2571,25 +2571,5 @@
 			mobileNavigation: true,
 			scheme: 'dark',
 		});
-	
-	// Gallery: gallery05.
-		_lightboxGallery.init({
-			id: 'gallery05',
-			navigation: true,
-			captions: false,
-			mobile: true,
-			mobileNavigation: true,
-			scheme: 'dark',
-		});
-	
-	// Gallery: gallery06.
-		_lightboxGallery.init({
-			id: 'gallery06',
-			navigation: true,
-			captions: false,
-			mobile: true,
-			mobileNavigation: true,
-			scheme: 'dark',
-		});
 
 })();
