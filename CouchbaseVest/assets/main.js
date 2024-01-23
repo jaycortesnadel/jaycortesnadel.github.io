@@ -1397,5 +1397,792 @@
 					$body.classList.add('is-touch');
 		
 			}
+	
+	// Gallery.
+		/**
+		* Lightbox gallery.
+		*/
+		function lightboxGallery() {
+		
+		var _this = this;
+		
+		/**
+		 * ID.
+		 * @var {string}
+		 */
+		this.id = 'gallery';
+		
+		/**
+		 * Wrapper.
+		 * @var {DOMElement}
+		 */
+		this.$wrapper = $('#' + this.id);
+		
+		/**
+		 * Modal.
+		 * @var {DOMElement}
+		 */
+		this.$modal = null;
+		
+		/**
+		 * Modal caption.
+		 * @var {DOMElement}
+		 */
+		this.$modalCaption = null;
+		
+		/**
+		 * Modal image.
+		 * @var {DOMElement}
+		 */
+		this.$modalImage = null;
+		
+		/**
+		 * Modal next.
+		 * @var {DOMElement}
+		 */
+		this.$modalNext = null;
+		
+		/**
+		 * Modal previous.
+		 * @var {DOMElement}
+		 */
+		this.$modalPrevious = null;
+		
+		/**
+		 * Links.
+		 * @var {nodeList}
+		 */
+		this.$links = null;
+		
+		/**
+		 * Lock state.
+		 * @var {bool}
+		 */
+		this.locked = false;
+		
+		/**
+		 * Captions state.
+		 * @var {bool}
+		 */
+		this.captions = null;
+		
+		/**
+		 * Current index.
+		 * @var {integer}
+		 */
+		this.current = null;
+		
+		/**
+		 * Transition delay (must match CSS).
+		 * @var {integer}
+		 */
+		this.delay = 375;
+		
+		/**
+		 * Navigation state.
+		 * @var {bool}
+		 */
+		this.navigation = null;
+		
+		/**
+		 * Mobile state.
+		 * @var {bool}
+		 */
+		this.mobile = null;
+		
+		/**
+		 * Protect state.
+		 * @var {bool}
+		 */
+		this.protect = null;
+		
+		/**
+		 * Zoom interval ID.
+		 * @var {integer}
+		 */
+		this.zoomIntervalId = null;
+		
+		// Init modal.
+			this.initModal();
+		
+		};
+		
+		/**
+		 * Initialize.
+		 * @param {object} config Config.
+		 */
+		lightboxGallery.prototype.init = function(config) {
+		
+			var _this = this,
+				$links = $$('#' + config.id + ' .thumbnail'),
+				navigation = config.navigation,
+				captions = config.captions,
+				mobile = config.mobile,
+				mobileNavigation = config.mobileNavigation,
+				scheme = config.scheme,
+				protect = ('protect' in config ? config.protect : false),
+				i, j;
+		
+			// Determine if navigation needs to be disabled (despite what our config says).
+				j = 0;
+		
+				// Step through items.
+					for (i = 0; i < $links.length; i++) {
+		
+						// Not ignored? Increment count.
+							if ($links[i].dataset.lightboxIgnore != '1')
+								j++;
+		
+					}
+		
+				// Less than two allowed items? Disable navigation.
+					if (j < 2)
+						navigation = false;
+		
+			// Bind click events.
+				for (i=0; i < $links.length; i++) {
+		
+					// Ignored? Skip.
+						if ($links[i].dataset.lightboxIgnore == '1')
+							continue;
+		
+					// Bind click event.
+						(function(index) {
+							$links[index].addEventListener('click', function(event) {
+		
+								// Prevent default.
+									event.stopPropagation();
+									event.preventDefault();
+		
+								// Show.
+									_this.show(index, {
+										$links: $links,
+										navigation: navigation,
+										captions: captions,
+										mobile: mobile,
+										mobileNavigation: mobileNavigation,
+										scheme: scheme,
+										protect: protect,
+									});
+		
+							});
+						})(i);
+		
+				}
+		
+		};
+		
+		/**
+		 * Init modal.
+		 */
+		lightboxGallery.prototype.initModal = function() {
+		
+			var	_this = this,
+				dragStart = null,
+				dragEnd = null,
+				$modal,
+				$modalInner,
+				$modalImage,
+				$modalNext,
+				$modalPrevious;
+		
+			// Build element.
+				$modal = document.createElement('div');
+					$modal.id = this.id + '-modal';
+					$modal.tabIndex = -1;
+					$modal.className = 'gallery-modal';
+					$modal.innerHTML = '<div class="inner"><img src="" /></div><div class="caption"></div><div class="nav previous"></div><div class="nav next"></div><div class="close"></div>';
+					$body.appendChild($modal);
+		
+				// Inner.
+					$modalInner = $modal.querySelector('.inner');
+		
+				// Image.
+					$modalImage = $modal.querySelector('img');
+		
+					// Load event.
+						$modalImage.addEventListener('load', function() {
+		
+							// Mark as done.
+								$modal.classList.add('done');
+		
+							// Delay (wait for visible transition, if not switching).
+								setTimeout(function() {
+		
+									// No longer visible? Bail.
+										if (!$modal.classList.contains('visible'))
+											return;
+		
+									// Set loaded.
+										$modal.classList.add('loaded');
+		
+									// Clear switching after delay.
+										setTimeout(function() {
+											$modal.classList.remove('switching', 'from-left', 'from-right', 'done');
+										}, _this.delay);
+		
+								}, ($modal.classList.contains('switching') ? 0 : _this.delay));
+		
+						});
+		
+					// Contextmenu event.
+						$modalImage.addEventListener('contextmenu', function() {
+		
+							// Protected? Prevent default.
+								if (_this.protect)
+									event.preventDefault();
+		
+						}, true);
+		
+					// Dragstart event.
+						$modalImage.addEventListener('dragstart', function() {
+		
+							// Protected? Prevent default.
+								if (_this.protect)
+									event.preventDefault();
+		
+						}, true);
+		
+				// Caption.
+					$modalCaption = $modal.querySelector('.caption');
+		
+				// Navigation.
+					$modalNext = $modal.querySelector('.next');
+					$modalPrevious = $modal.querySelector('.previous');
+		
+			// Methods.
+				$modal.show = function(index, offset, direction) {
+		
+					var item,
+						i, j, found;
+		
+					// Locked? Bail.
+						if (_this.locked)
+							return;
+		
+					// No index provided? Use current.
+						if (typeof index != 'number')
+							index = _this.current;
+		
+					// Offset provided? Find first allowed offset item.
+						if (typeof offset == 'number') {
+		
+							found = false;
+							j = 0;
+		
+							// Step through items using offset (up to item count).
+								for (j = 0; j < _this.$links.length; j++) {
+		
+									// Increment index by offset.
+										index += offset;
+		
+									// Less than zero? Jump to end.
+										if (index < 0)
+											index = _this.$links.length - 1;
+		
+									// Greater than length? Jump to beginning.
+										else if (index >= _this.$links.length)
+											index = 0;
+		
+									// Already there? Bail.
+										if (index == _this.current)
+											break;
+		
+									// Get item.
+										item = _this.$links.item(index);
+		
+										if (!item)
+											break;
+		
+									// Not ignored? Found!
+										if (item.dataset.lightboxIgnore != '1') {
+		
+											found = true;
+											break;
+		
+										}
+		
+								}
+		
+							// Couldn't find an allowed item? Bail.
+								if (!found)
+									return;
+		
+						}
+		
+					// Otherwise, see if requested item is allowed.
+						else {
+		
+							// Check index.
+		
+								// Less than zero? Jump to end.
+									if (index < 0)
+										index = _this.$links.length - 1;
+		
+								// Greater than length? Jump to beginning.
+									else if (index >= _this.$links.length)
+										index = 0;
+		
+								// Already there? Bail.
+									if (index == _this.current)
+										return;
+		
+							// Get item.
+								item = _this.$links.item(index);
+		
+								if (!item)
+									return;
+		
+							// Ignored? Bail.
+								if (item.dataset.lightboxIgnore == '1')
+									return;
+		
+						}
+		
+					// Mobile? Set zoom handler interval.
+						if (client.mobile)
+							_this.zoomIntervalId = setInterval(function() {
+								_this.zoomHandler();
+							}, 250);
+		
+					// Lock.
+						_this.locked = true;
+		
+					// Current?
+						if (_this.current !== null) {
+		
+							// Clear loaded.
+								$modal.classList.remove('loaded');
+		
+							// Set switching.
+								$modal.classList.add('switching');
+		
+							// Apply direction modifier (if applicable).
+								switch (direction) {
+		
+									case -1:
+										$modal.classList.add('from-left');
+										break;
+		
+									case 1:
+										$modal.classList.add('from-right');
+										break;
+		
+									default:
+										break;
+		
+								}
+		
+							// Delay (wait for switching transition).
+								setTimeout(function() {
+		
+									// Set current, src.
+										_this.current = index;
+										$modalImage.src = item.href;
+		
+									// Set caption (if applicable).
+										if (_this.captions)
+											$modalCaption.innerHTML = item.querySelector('[data-caption]').dataset.caption;
+		
+									// Delay.
+										setTimeout(function() {
+		
+											// Focus.
+												$modal.focus();
+		
+											// Unlock.
+												_this.locked = false;
+		
+										}, _this.delay);
+		
+								}, _this.delay);
+		
+						}
+		
+					// Otherwise ...
+						else {
+		
+							// Set current, src.
+								_this.current = index;
+								$modalImage.src = item.href;
+		
+							// Set caption (if applicable).
+								if (_this.captions)
+									$modalCaption.innerHTML = item.querySelector('[data-caption]').dataset.caption;
+		
+							// Set visible.
+								$modal.classList.add('visible');
+		
+							// Delay.
+								setTimeout(function() {
+		
+									// Focus.
+										$modal.focus();
+		
+									// Unlock.
+										_this.locked = false;
+		
+								}, _this.delay);
+		
+						}
+		
+				};
+		
+				$modal.hide = function() {
+		
+					// Locked? Bail.
+						if (_this.locked)
+							return;
+		
+					// Already hidden? Bail.
+						if (!$modal.classList.contains('visible'))
+							return;
+		
+					// Lock.
+						_this.locked = true;
+		
+					// Clear visible, loaded, switching.
+						$modal.classList.remove('visible');
+						$modal.classList.remove('loaded');
+						$modal.classList.remove('switching', 'from-left', 'from-right', 'done');
+		
+					// Clear zoom handler interval.
+						clearInterval(_this.zoomIntervalId);
+		
+					// Delay (wait for visible transition).
+						setTimeout(function() {
+		
+							// Clear src.
+								$modalImage.src = '';
+		
+							// Unlock.
+								_this.locked = false;
+		
+							// Focus.
+								$body.focus();
+		
+							// Clear current.
+								_this.current = null;
+		
+						}, _this.delay);
+		
+				};
+		
+				$modal.next = function(direction) {
+					$modal.show(null, 1, direction);
+				};
+		
+				$modal.previous = function(direction) {
+					$modal.show(null, -1, direction);
+				};
+		
+				$modal.first = function() {
+					$modal.show(0);
+				};
+		
+				$modal.last = function() {
+					$modal.show(_this.$links.length - 1);
+				};
+		
+			// Events.
+				$modalInner.addEventListener('touchstart', function(event) {
+		
+					// Navigation disabled? Bail.
+						if (!_this.navigation)
+							return;
+		
+					// More than two touches? Bail.
+						if (event.touches.length > 1)
+							return;
+		
+					// Record drag start.
+						dragStart = {
+							x: event.touches[0].clientX,
+							y: event.touches[0].clientY
+						};
+		
+				});
+		
+				$modalInner.addEventListener('touchmove', function(event) {
+		
+					var dx, dy;
+		
+					// Navigation disabled? Bail.
+						if (!_this.navigation)
+							return;
+		
+					// No drag start, or more than two touches? Bail.
+						if (!dragStart
+						||	event.touches.length > 1)
+							return;
+		
+					// Record drag end.
+						dragEnd = {
+							x: event.touches[0].clientX,
+							y: event.touches[0].clientY
+						};
+		
+					// Determine deltas.
+						dx = dragStart.x - dragEnd.x;
+						dy = dragStart.y - dragEnd.y;
+		
+					// Doesn't exceed threshold? Bail.
+						if (Math.abs(dx) < 50)
+							return;
+		
+					// Prevent default.
+						event.preventDefault();
+		
+					// Positive value? Move to next.
+						if (dx > 0)
+							$modal.next(-1);
+		
+					// Negative value? Move to previous.
+						else if (dx < 0)
+							$modal.previous(1);
+		
+				});
+		
+				$modalInner.addEventListener('touchend', function(event) {
+		
+					// Navigation disabled? Bail.
+						if (!_this.navigation)
+							return;
+		
+					// Clear drag start, end.
+						dragStart = null;
+						dragEnd = null;
+		
+				});
+		
+				$modal.addEventListener('click', function(event) {
+		
+					// Click target was an anchor or spoiler text tag? Bail.
+						if (event.target
+						&&	(event.target.tagName == 'A' || event.target.tagName == 'SPOILER-TEXT'))
+							return;
+		
+					// Hide modal.
+						$modal.hide();
+		
+				});
+		
+				$modal.addEventListener('keydown', function(event) {
+		
+					// Not visible? Bail.
+						if (!$modal.classList.contains('visible'))
+							return;
+		
+					switch (event.keyCode) {
+		
+						// Right arrow, Space.
+							case 39:
+							case 32:
+		
+								if (!_this.navigation)
+									break;
+		
+								event.preventDefault();
+								event.stopPropagation();
+		
+								$modal.next();
+		
+								break;
+		
+						// Left arrow.
+							case 37:
+		
+								if (!_this.navigation)
+									break;
+		
+								event.preventDefault();
+								event.stopPropagation();
+		
+								$modal.previous();
+		
+								break;
+		
+						// Home.
+							case 36:
+		
+								if (!_this.navigation)
+									break;
+		
+								event.preventDefault();
+								event.stopPropagation();
+		
+								$modal.first();
+		
+								break;
+		
+						// End.
+							case 35:
+		
+								if (!_this.navigation)
+									break;
+		
+								event.preventDefault();
+								event.stopPropagation();
+		
+								$modal.last();
+		
+								break;
+		
+						// Escape.
+							case 27:
+		
+								event.preventDefault();
+								event.stopPropagation();
+		
+								$modal.hide();
+		
+								break;
+		
+					}
+		
+				});
+		
+				$modalNext.addEventListener('click', function(event) {
+					$modal.next();
+				});
+		
+				$modalPrevious.addEventListener('click', function(event) {
+					$modal.previous();
+				});
+		
+			// Set.
+				this.$modal = $modal;
+				this.$modalImage = $modalImage;
+				this.$modalCaption = $modalCaption;
+				this.$modalNext = $modalNext;
+				this.$modalPrevious = $modalPrevious;
+		
+		};
+		
+		/**
+		 * Show.
+		 * @param {string} href Image href.
+		 */
+		lightboxGallery.prototype.show = function(href, config) {
+		
+			// Update config.
+				this.$links = config.$links;
+				this.navigation = config.navigation;
+				this.captions = config.captions;
+				this.mobile = config.mobile;
+				this.mobileNavigation = config.mobileNavigation;
+				this.scheme = config.scheme;
+				this.protect = config.protect;
+		
+			// Scheme.
+		
+				// Remove any existing classes.
+					this.$modal.classList.remove('light', 'dark');
+		
+				// Determine scheme.
+					switch (this.scheme) {
+		
+						case 'light':
+							this.$modal.classList.add('light');
+							break;
+		
+						case 'dark':
+							this.$modal.classList.add('dark');
+							break;
+		
+						case 'auto':
+		
+							// Prefers light scheme? Apply light class.
+								if (window.matchMedia('(prefers-color-scheme: light)').matches)
+									this.$modal.classList.add('light');
+		
+							// Otherwise, default to dark.
+								else
+									this.$modal.classList.add('dark');
+		
+							break;
+		
+					}
+		
+			// Navigation.
+				if (this.navigation) {
+		
+					this.$modalNext.style.display = '';
+					this.$modalPrevious.style.display = '';
+		
+					// Mobile navigation.
+						if (client.mobile
+						&&	!this.mobileNavigation) {
+		
+							this.$modalNext.style.display = 'none';
+							this.$modalPrevious.style.display = 'none';
+		
+						}
+		
+				}
+				else {
+		
+					this.$modalNext.style.display = 'none';
+					this.$modalPrevious.style.display = 'none';
+		
+				}
+		
+			// Captions.
+				if (this.captions)
+					this.$modalCaption.style.display = '';
+				else
+					this.$modalCaption.style.display = 'none';
+		
+			// Protect.
+				if (this.protect) {
+		
+					this.$modalImage.style.WebkitTouchCallout = 'none';
+					this.$modalImage.style.userSelect = 'none';
+		
+				}
+				else {
+		
+					this.$modalImage.style.WebkitTouchCallout = '';
+					this.$modalImage.style.userSelect = '';
+		
+				}
+		
+			// Mobile.
+				if (client.mobile && !this.mobile)
+					return;
+		
+			// Show modal.
+				this.$modal.show(href);
+		
+		};
+		
+		/**
+		 * Zoom handler.
+		 */
+		lightboxGallery.prototype.zoomHandler = function() {
+		
+			var threshold = window.matchMedia('(orientation: portrait)').matches ? 50 : 100;
+		
+			// Zoomed in? Set zooming.
+				if (window.outerWidth > window.innerWidth + threshold)
+					this.$modal.classList.add('zooming');
+		
+			// Otherwise, clear zooming.
+				else
+					this.$modal.classList.remove('zooming');
+		
+		};
+		
+		var _lightboxGallery = new lightboxGallery;
+	
+	// Gallery: gallery01.
+		_lightboxGallery.init({
+			id: 'gallery01',
+			navigation: true,
+			captions: false,
+			mobile: true,
+			mobileNavigation: true,
+			scheme: 'dark',
+		});
 
 })();
