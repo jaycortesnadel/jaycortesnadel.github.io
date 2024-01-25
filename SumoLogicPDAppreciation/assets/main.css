@@ -10,7 +10,7 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #000099;
+	background-color: #171C8F;
 }
 
 :root {
@@ -873,7 +873,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons02 .button {
-	background-color: #000099;
+	background-color: #171C8F;
 	color: #FFFFFF;
 }
 
@@ -903,7 +903,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons01 .button {
-	background-color: #000099;
+	background-color: #171C8F;
 	color: #FFFFFF;
 }
 
