@@ -375,6 +375,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	-webkit-text-fill-color: currentcolor;
 }
 
+#text04 {
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#text04 a {
+	text-decoration: underline;
+}
+
+#text04 a:hover {
+	text-decoration: none;
+}
+
+#text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text02 {
 	color: #000000;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -392,6 +412,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text02 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text03 {
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -496,7 +536,21 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-top: 1.125rem !important;
 	}
 	
+	#text04 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.5;
+	}
+	
 	#text02 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.5;
+	}
+	
+	#text03 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1em;
@@ -558,7 +612,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		height: 6.34375rem !important;
 	}
 	
+	#text04 {
+		font-size: 1em;
+	}
+	
 	#text02 {
+		font-size: 1em;
+	}
+	
+	#text03 {
 		font-size: 1em;
 	}
 	
