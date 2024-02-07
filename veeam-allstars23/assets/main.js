@@ -2532,39 +2532,9 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
-	// Gallery: gallery04.
-		_lightboxGallery.init({
-			id: 'gallery04',
-			navigation: true,
-			captions: false,
-			mobile: true,
-			mobileNavigation: true,
-			scheme: 'dark',
-		});
-	
 	// Gallery: gallery03.
 		_lightboxGallery.init({
 			id: 'gallery03',
-			navigation: true,
-			captions: false,
-			mobile: true,
-			mobileNavigation: true,
-			scheme: 'dark',
-		});
-	
-	// Gallery: gallery02.
-		_lightboxGallery.init({
-			id: 'gallery02',
-			navigation: true,
-			captions: false,
-			mobile: true,
-			mobileNavigation: true,
-			scheme: 'dark',
-		});
-	
-	// Gallery: gallery01.
-		_lightboxGallery.init({
-			id: 'gallery01',
 			navigation: true,
 			captions: false,
 			mobile: true,
