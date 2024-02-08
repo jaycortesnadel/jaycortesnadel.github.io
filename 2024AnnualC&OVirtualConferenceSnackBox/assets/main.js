@@ -1011,18 +1011,6 @@
 							],
 						},
 					},
-					'sizechart': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', {
-										'page_title': 'Sizechart',
-										'page_location': '/#sizechart',
-									});
-								},
-							],
-						},
-					},
 					'thankyou': {
 						events: {
 							onopen: [
