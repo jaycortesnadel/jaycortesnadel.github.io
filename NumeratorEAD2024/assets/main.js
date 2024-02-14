@@ -1005,7 +1005,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Form',
-										'page_location': 'https://demonmrtor.carrd.co/#form',
+										'page_location': '/#form',
 									});
 								},
 							],
@@ -1017,7 +1017,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Thankyou',
-										'page_location': 'https://demonmrtor.carrd.co/#thankyou',
+										'page_location': '/#thankyou',
 									});
 								},
 							],
@@ -1029,7 +1029,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Home',
-										'page_location': 'https://demonmrtor.carrd.co',
+										'page_location': '',
 									});
 								},
 							],
