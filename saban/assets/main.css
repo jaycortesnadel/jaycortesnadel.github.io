@@ -117,6 +117,10 @@ a[onclick]:not([href]) {
 	cursor: pointer;
 }
 
+deferred-script {
+	display: none;
+}
+
 #wrapper {
 	-webkit-overflow-scrolling: touch;
 	align-items: center;
@@ -408,6 +412,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text03 {
+	text-align: center;
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text02 {
 	text-align: center;
 	color: #000000;
@@ -638,6 +665,8 @@ hr:before {
 	height: 100%;
 	object-fit: contain;
 	width: 100%;
+	max-width: var(--natural-width, none);
+	max-height: var(--natural-height, none);
 }
 
 .gallery-modal .caption {
@@ -954,6 +983,45 @@ table {
 th {
 	font-weight: bolder;
 	text-align: var(--site-language-alignment);
+}
+
+#table01 {
+	text-align: center;
+	color: #4D4D4D;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table01 table {
+	text-align: center;
+}
+
+#table01 th {
+	text-align: center;
+}
+
+#table01 a {
+	text-decoration: underline;
+}
+
+#table01 a:hover {
+	text-decoration: none;
+}
+
+#table01 .table-inner {
+	width: 39rem;
+}
+
+#table01 thead {
+	background-color: rgba(0,0,0,0.184);
+}
+
+#table01 th, #table01 td {
+	border: solid 1px #000000;
+	padding: 0.5rem 0.6875rem;
 }
 
 #table02 {
@@ -1283,6 +1351,13 @@ th {
 		line-height: 1.25;
 	}
 	
+	#text03 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
 	#text02 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -1354,6 +1429,16 @@ th {
 		letter-spacing: 0.025rem;
 		padding-left: calc(0.025rem + 0.875rem);
 		font-size: 0.75em;
+	}
+	
+	#table01 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table01 th, #table01 td {
+		padding: 0.5rem 0.6875rem;
 	}
 	
 	#table02 {
@@ -1532,6 +1617,10 @@ th {
 		font-size: 1em;
 	}
 	
+	#text03 {
+		font-size: 1em;
+	}
+	
 	#text02 {
 		font-size: 1em;
 	}
@@ -1554,6 +1643,10 @@ th {
 	
 	#buttons01 {
 		gap: 0.5625rem;
+	}
+	
+	#table01 {
+		font-size: 0.75em;
 	}
 	
 	#table02 {

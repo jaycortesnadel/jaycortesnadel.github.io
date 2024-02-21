@@ -415,6 +415,33 @@
 		
 						}
 		
+				// Deferred script tags.
+		
+					// Get list of deferred script tags.
+						a = parent.querySelectorAll('deferred-script');
+		
+					// Step through list.
+						for (i=0; i < a.length; i++) {
+		
+							// Create replacement script tag.
+								x = document.createElement('script');
+		
+							// Set deferred data attribute (so we can unload this element later).
+								x.setAttribute('data-deferred', '');
+		
+							// Set "src" attribute (if present).
+								if (a[i].getAttribute('src'))
+									x.setAttribute('src', a[i].getAttribute('src'));
+		
+							// Set text content (if present).
+								if (a[i].textContent)
+									x.textContent = a[i].textContent;
+		
+							// Replace.
+								a[i].replaceWith(x);
+		
+						}
+		
 			},
 			unloadElements = function(parent) {
 		
@@ -470,6 +497,33 @@
 						if (e)
 							e.blur();
 		
+				// Deferred script tags.
+				// NOTE: Disabled for now. May want to bring this back later.
+				/*
+		
+					// Get list of (previously deferred) script tags.
+						a = parent.querySelectorAll('script[data-deferred]');
+		
+					// Step through list.
+						for (i=0; i < a.length; i++) {
+		
+							// Create replacement deferred-script tag.
+								x = document.createElement('deferred-script');
+		
+							// Set "src" attribute (if present).
+								if (a[i].getAttribute('src'))
+									x.setAttribute('src', a[i].getAttribute('src'));
+		
+							// Set text content (if present).
+								if (a[i].textContent)
+									x.textContent = a[i].textContent;
+		
+							// Replace.
+								a[i].replaceWith(x);
+		
+						}
+		
+				*/
 		
 			};
 		
@@ -1960,6 +2014,10 @@
 					// Load event.
 						$modalImage.addEventListener('load', function() {
 		
+							// Set maximum dimensions of image element to match image's natural width/height.
+								$modalImage.style.setProperty('--natural-width', $modalImage.naturalWidth + 'px');
+								$modalImage.style.setProperty('--natural-height', $modalImage.naturalHeight + 'px');
+		
 							// Mark as done.
 								$modal.classList.add('done');
 		
@@ -2006,6 +2064,22 @@
 				// Navigation.
 					$modalNext = $modal.querySelector('.next');
 					$modalPrevious = $modal.querySelector('.previous');
+		
+			// Browser-specific workarounds.
+				switch (client.browser) {
+		
+					case 'safari':
+					case 'firefox':
+		
+						// Eliminate drop shadow on "inner" due to sizing issues.
+							$modalInner.style.boxShadow = 'none';
+		
+						break;
+		
+					default:
+						break;
+		
+				}
 		
 			// Methods.
 				$modal.show = function(index, offset, direction) {
