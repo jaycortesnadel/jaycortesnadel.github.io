@@ -10,7 +10,7 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #049FD9;
+	background-color: #1E4471;
 }
 
 body:after {
@@ -115,6 +115,10 @@ a {
 
 a[onclick]:not([href]) {
 	cursor: pointer;
+}
+
+deferred-script {
+	display: none;
 }
 
 #wrapper {
@@ -364,7 +368,7 @@ body.is-instant:after {
 
 #image01 .frame {
 	max-width: 100%;
-	width: 643px;
+	width: 2048px;
 	transition: none;
 }
 
@@ -372,49 +376,14 @@ body.is-instant:after {
 	transition: none;
 }
 
-hr {
-	align-items: center;
-	border: 0;
-	display: flex;
-	justify-content: var(--flex-alignment);
-	min-height: 1rem;
-	padding: 0;
-	position: relative;
-	width: 100%;
+#image02 .frame {
+	max-width: 100%;
+	width: 1599px;
+	transition: none;
 }
 
-hr:before {
-	content: '';
-}
-
-#divider04:not(:first-child) {
-	margin-top: 0.25rem !important;
-}
-
-#divider04:not(:last-child) {
-	margin-bottom: 0.25rem !important;
-}
-
-#divider04:before {
-	width: 3rem;
-	background-color: #FFFFFF;
-	height: 2px;
-	border-radius: 0px;
-}
-
-#divider05:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider05:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider05:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
+#image02 .frame img {
+	transition: none;
 }
 
 .container {
@@ -1017,7 +986,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons01 .button {
-	background-color: #049FD9;
+	background-color: #1E4471;
 	color: #FFFFFF;
 }
 
@@ -1381,6 +1350,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: none;
 }
 
+hr {
+	align-items: center;
+	border: 0;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	min-height: 1rem;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+hr:before {
+	content: '';
+}
+
+#divider05:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider05:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider05:before {
+	width: 32rem;
+	background-color: #000000;
+	height: 1px;
+	border-radius: 0px;
+}
+
 @media (orientation: portrait) {
 	.gallery-modal {
 		grid-template-areas: "image" "caption";
@@ -1489,30 +1488,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#main > .inner > footer > .full:last-child {
 		margin-bottom: -3.125rem !important;
-	}
-	
-	#divider04:not(:first-child) {
-		margin-top: 0.25rem !important;
-	}
-	
-	#divider04:not(:last-child) {
-		margin-bottom: 0.25rem !important;
-	}
-	
-	#divider04:before {
-		width: 3rem;
-	}
-	
-	#divider05:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider05:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider05:before {
-		width: 32rem;
 	}
 	
 	#columns03 {
@@ -1875,6 +1850,18 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#gallery02 ul li img {
 		max-height: 11.25rem;
+	}
+	
+	#divider05:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider05:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider05:before {
+		width: 32rem;
 	}
 }
 
