@@ -95,6 +95,10 @@ a[onclick]:not([href]) {
 	cursor: pointer;
 }
 
+deferred-script {
+	display: none;
+}
+
 #wrapper {
 	-webkit-overflow-scrolling: touch;
 	align-items: center;
