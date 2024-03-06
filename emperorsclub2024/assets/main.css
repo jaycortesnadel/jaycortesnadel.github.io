@@ -458,12 +458,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text11 {
 	color: #000000;
-	font-family: 'Times New Roman', serif;
+	font-family: 'Gothic A1', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
-	font-size: 1.125em;
+	font-size: 1em;
 	line-height: 1.75;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text11 a {
@@ -557,10 +557,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 2.5rem;
 	padding: 0 1.25rem;
 	vertical-align: middle;
-	font-family: 'Times New Roman', serif;
+	font-family: 'Gothic A1', sans-serif;
 	letter-spacing: -0.025rem;
-	font-size: 1.5em;
-	font-weight: 400;
+	font-size: 1em;
+	font-weight: 500;
 	border-radius: 1.125rem;
 	direction: var(--site-language-direction);
 	overflow: hidden;
@@ -1383,7 +1383,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	#text11 {
 		letter-spacing: 0.021875rem;
 		width: calc(100% + 0.021875rem);
-		font-size: 1.125em;
+		font-size: 1em;
 		line-height: 1.75;
 	}
 	
@@ -1407,7 +1407,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#buttons01 li a {
 		letter-spacing: -0.025rem;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	
 	.gallery-modal .close {
@@ -1635,7 +1635,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#text11 {
-		font-size: 1.125em;
+		font-size: 1em;
 	}
 	
 	#text02 {
