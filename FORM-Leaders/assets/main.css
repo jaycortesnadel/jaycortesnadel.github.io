@@ -147,7 +147,7 @@ deferred-script {
 	position: relative;
 	text-align: var(--alignment);
 	z-index: 1;
-	background-color: rgba(255,255,255,0.631);
+	background-color: #FFFFFF;
 	box-shadow: 0rem 3rem 3.125rem 0rem rgba(44,42,54,0.451);
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	transition: opacity 1.25s ease 0s,transform 1.25s ease 0s;
@@ -423,12 +423,40 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	-webkit-text-fill-color: currentcolor;
 }
 
+#text03:not(:first-child) {
+	margin-top: 0.75rem !important;
+}
+
+#text03:not(:last-child) {
+	margin-bottom: 0.75rem !important;
+}
+
+#text03 {
+	color: #000000;
+	font-family: 'Arial', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text02:not(:first-child) {
-	margin-top: 3rem !important;
+	margin-top: 1.25rem !important;
 }
 
 #text02:not(:last-child) {
-	margin-bottom: 3rem !important;
+	margin-bottom: 1.25rem !important;
 }
 
 #text02 {
@@ -853,6 +881,37 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: none;
 }
 
+#gallery03 .inner {
+	max-width: 100%;
+}
+
+#gallery03 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery03 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery03 ul {
+	gap: 2rem;
+}
+
+#gallery03 ul li .thumbnail {
+	display: block;
+	transition: none;
+}
+
+#gallery03 ul li img {
+	height: auto;
+	max-height: 17.375rem;
+}
+
+#gallery03 ul li .thumbnail img {
+	transition: none;
+}
+
 #gallery01 .inner {
 	max-width: 100%;
 }
@@ -906,6 +965,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	white-space: nowrap;
 }
 
+#buttons03 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons03 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: middle;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.9375rem);
+	font-size: 0.875em;
+	font-weight: 400;
+	border-radius: 0.5rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons03 .button {
+	background-color: #003A63;
+	color: #FFFFFF;
+}
+
 #buttons02 {
 	gap: 0.75rem;
 	flex-direction: row;
@@ -932,6 +1021,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons02 .button {
+	background-color: #003A63;
+	color: #FFFFFF;
+}
+
+#buttons04 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons04 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: middle;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 0.9375rem);
+	font-size: 1em;
+	font-weight: 400;
+	border-radius: 0.5rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons04 .button {
 	background-color: #003A63;
 	color: #FFFFFF;
 }
@@ -1457,12 +1576,27 @@ th {
 		margin-bottom: 1.21875rem !important;
 	}
 	
+	#text03:not(:first-child) {
+		margin-top: 0.5625rem !important;
+	}
+	
+	#text03:not(:last-child) {
+		margin-bottom: 0.5625rem !important;
+	}
+	
+	#text03 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.5em;
+		line-height: 1.5;
+	}
+	
 	#text02:not(:first-child) {
-		margin-top: 2.25rem !important;
+		margin-top: 0.9375rem !important;
 	}
 	
 	#text02:not(:last-child) {
-		margin-bottom: 2.25rem !important;
+		margin-bottom: 0.9375rem !important;
 	}
 	
 	#text02 {
@@ -1509,8 +1643,22 @@ th {
 		max-height: 10.125rem;
 	}
 	
+	#gallery03 ul li img {
+		max-height: 13.03125rem;
+	}
+	
 	#gallery01 ul li img {
 		max-height: 13.03125rem;
+	}
+	
+	#buttons03 {
+		gap: 0.75rem;
+	}
+	
+	#buttons03 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.9375rem);
+		font-size: 0.875em;
 	}
 	
 	#buttons02 {
@@ -1521,6 +1669,16 @@ th {
 		letter-spacing: 0.025rem;
 		padding-left: calc(0.025rem + 0.9375rem);
 		font-size: 0.875em;
+	}
+	
+	#buttons04 {
+		gap: 0.75rem;
+	}
+	
+	#buttons04 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 0.9375rem);
+		font-size: 1em;
 	}
 	
 	#buttons01 {
@@ -1749,12 +1907,32 @@ th {
 		--spacing: 1.3125rem;
 	}
 	
+	#buttons03 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons03 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
 	#buttons02 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
 	#buttons02 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons04 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons04 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -1807,6 +1985,10 @@ th {
 		margin-bottom: -2.34375rem !important;
 	}
 	
+	#text03 {
+		font-size: 1.5em;
+	}
+	
 	#text02 {
 		font-size: 1em;
 	}
@@ -1827,11 +2009,23 @@ th {
 		gap: 1.5rem;
 	}
 	
+	#gallery03 ul {
+		gap: 1.5rem;
+	}
+	
 	#gallery01 ul {
 		gap: 1.5rem;
 	}
 	
+	#buttons03 {
+		gap: 0.5625rem;
+	}
+	
 	#buttons02 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons04 {
 		gap: 0.5625rem;
 	}
 	
