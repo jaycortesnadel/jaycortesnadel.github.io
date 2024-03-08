@@ -1059,7 +1059,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Sizechart',
-										'page_location': 'https://demoqlik.carrd.co/#sizechart',
+										'page_location': '/#sizechart',
 									});
 								},
 							],
@@ -1071,7 +1071,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Thankyou',
-										'page_location': 'https://demoqlik.carrd.co/#thankyou',
+										'page_location': '/#thankyou',
 									});
 								},
 							],
@@ -1083,7 +1083,7 @@
 								function() { 
 									gtag('config', 'G-MQV3S7ZN9G', {
 										'page_title': 'Home',
-										'page_location': 'https://demoqlik.carrd.co',
+										'page_location': '',
 									});
 								},
 							],
