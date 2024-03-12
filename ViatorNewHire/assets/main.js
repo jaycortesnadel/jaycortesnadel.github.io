@@ -1057,9 +1057,9 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', {
+									gtag('event', 'page_view', {
 										'page_title': 'Form',
-										'page_location': 'https://demoviator.carrd.co',
+										'page_location': '',
 									});
 								},
 							],
@@ -1069,9 +1069,9 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', {
+									gtag('event', 'page_view', {
 										'page_title': 'Sizechart',
-										'page_location': 'https://demoviator.carrd.co/#sizechart',
+										'page_location': '/#sizechart',
 									});
 								},
 							],
@@ -1081,9 +1081,9 @@
 						events: {
 							onopen: [
 								function() { 
-									gtag('config', 'G-MQV3S7ZN9G', {
+									gtag('event', 'page_view', {
 										'page_title': 'Thankyou',
-										'page_location': 'https://demoviator.carrd.co/#thankyou',
+										'page_location': '/#thankyou',
 									});
 								},
 							],
