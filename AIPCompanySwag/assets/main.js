@@ -2606,9 +2606,9 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
-	// Gallery: gallery01.
+	// Gallery: gallery04.
 		_lightboxGallery.init({
-			id: 'gallery01',
+			id: 'gallery04',
 			navigation: true,
 			captions: false,
 			mobile: true,
@@ -2616,9 +2616,9 @@
 			scheme: 'dark',
 		});
 	
-	// Gallery: gallery02.
+	// Gallery: gallery05.
 		_lightboxGallery.init({
-			id: 'gallery02',
+			id: 'gallery05',
 			navigation: true,
 			captions: false,
 			mobile: true,
@@ -2626,9 +2626,9 @@
 			scheme: 'dark',
 		});
 	
-	// Gallery: gallery03.
+	// Gallery: gallery06.
 		_lightboxGallery.init({
-			id: 'gallery03',
+			id: 'gallery06',
 			navigation: true,
 			captions: false,
 			mobile: true,
