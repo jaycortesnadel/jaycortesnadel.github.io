@@ -1096,7 +1096,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text10 {
+#text20 {
 	color: #000000;
 	font-family: 'Arial', sans-serif;
 	letter-spacing: 0.025rem;
@@ -1106,15 +1106,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 400;
 }
 
-#text10 a {
+#text20 a {
 	text-decoration: underline;
 }
 
-#text10 a:hover {
+#text20 a:hover {
 	text-decoration: none;
 }
 
-#text10 span.p:nth-child(n + 2) {
+#text20 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -3096,7 +3096,7 @@ th {
 		line-height: 1.75;
 	}
 	
-	#text10 {
+	#text20 {
 		letter-spacing: 0.021875rem;
 		width: calc(100% + 0.021875rem);
 		font-size: 1em;
@@ -3814,7 +3814,7 @@ th {
 		font-size: 1em;
 	}
 	
-	#text10 {
+	#text20 {
 		font-size: 1em;
 	}
 	
