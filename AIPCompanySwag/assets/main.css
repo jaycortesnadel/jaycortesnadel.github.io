@@ -10,7 +10,25 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #0033A0;
+}
+
+body:before {
+	content: '';
+	display: block;
+	background-attachment: scroll;
+	height: var(--background-height);
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: scale(1);
+	width: 100vw;
+	z-index: 0;
+	background-image: url('images/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #FFFFFF;
 }
 
 body:after {
@@ -152,7 +170,7 @@ deferred-script {
 	position: relative;
 	text-align: var(--alignment);
 	z-index: 1;
-	background-color: #FFFFFF;
+	background-color: rgba(0,0,0,0.322);
 	box-shadow: 0rem 3rem 3.125rem 0rem rgba(44,42,54,0.451);
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	transition: opacity 0.75s ease 0s,transform 0.75s ease 0s;
@@ -368,142 +386,12 @@ body.is-instant:after {
 
 #image01 .frame {
 	max-width: 100%;
-	width: 595px;
+	width: 994px;
 	transition: none;
 }
 
 #image01 .frame img {
 	transition: none;
-}
-
-#image02 .frame {
-	max-width: 100%;
-	width: 733px;
-	transition: none;
-}
-
-#image02 .frame img {
-	transition: none;
-}
-
-hr {
-	align-items: center;
-	border: 0;
-	display: flex;
-	justify-content: var(--flex-alignment);
-	min-height: 1rem;
-	padding: 0;
-	position: relative;
-	width: 100%;
-}
-
-hr:before {
-	content: '';
-}
-
-#divider04:not(:first-child) {
-	margin-top: 0.25rem !important;
-}
-
-#divider04:not(:last-child) {
-	margin-bottom: 0.25rem !important;
-}
-
-#divider04:before {
-	width: 3rem;
-	background-color: #FFFFFF;
-	height: 2px;
-	border-radius: 0px;
-}
-
-#divider05:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider05:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider05:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
-#divider06:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider06:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider06:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
-#divider03:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider03:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider03:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
-#divider07:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider07:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider07:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
-#divider02:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider02:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider02:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
-}
-
-#divider01:not(:first-child) {
-	margin-top: 1.75rem !important;
-}
-
-#divider01:not(:last-child) {
-	margin-bottom: 1.75rem !important;
-}
-
-#divider01:before {
-	width: 32rem;
-	background-color: #000000;
-	height: 1px;
-	border-radius: 0px;
 }
 
 .container {
@@ -809,6 +697,111 @@ hr:before {
 	width: 100%;
 }
 
+hr {
+	align-items: center;
+	border: 0;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	min-height: 1rem;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+hr:before {
+	content: '';
+}
+
+#divider05:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider05:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider05:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider04:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider04:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider04:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider02:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider02:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider02:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider03:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider03:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider03:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider06:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider06:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider06:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider07:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider07:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider07:before {
+	width: 32rem;
+	background-color: #FFFFFF;
+	height: 1px;
+	border-radius: 0px;
+}
+
 h1, h2, h3, p {
 	direction: var(--site-language-direction);
 	position: relative;
@@ -825,13 +818,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text01 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text01 a {
@@ -848,13 +841,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text10 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text10 a {
@@ -871,7 +864,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text11 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
@@ -894,7 +887,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text12 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
@@ -917,7 +910,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text13 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
@@ -940,13 +933,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text14 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.75em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text14 a {
@@ -963,13 +956,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text05 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text05 a {
@@ -986,13 +979,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text06 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text06 a {
@@ -1009,13 +1002,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text07 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text07 a {
@@ -1032,13 +1025,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text02 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text02 a {
@@ -1055,13 +1048,13 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text03 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 0.875em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #text03 a {
@@ -1077,7 +1070,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text04 {
-	color: #4D4D4D;
+	color: #FFFFFF;
 	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
@@ -1176,6 +1169,36 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons01 .button {
+	background-color: #0033A0;
+	color: #FFFFFF;
+}
+
+#buttons04 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons04 li a {
+	display: inline-block;
+	width: auto;
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 1rem;
+	vertical-align: middle;
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 1rem);
+	font-size: 1em;
+	font-weight: 300;
+	border-radius: 2.5rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: none;
+}
+
+#buttons04 .button {
 	background-color: #0033A0;
 	color: #FFFFFF;
 }
@@ -1524,12 +1547,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery04 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #gallery04 ul {
@@ -1569,12 +1592,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery05 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #gallery05 ul {
@@ -1598,6 +1621,96 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transform: scale(1.1125);
 }
 
+#gallery01 .inner {
+	max-width: 100%;
+}
+
+#gallery01 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery01 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery01 ul li .caption p {
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	letter-spacing: 0.125rem;
+	font-size: 0.75em;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+#gallery01 ul {
+	gap: 0.5rem;
+}
+
+#gallery01 ul li .thumbnail {
+	display: block;
+}
+
+#gallery01 ul li img {
+	height: auto;
+	max-height: 10rem;
+}
+
+#gallery01 ul li .thumbnail img {
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery01 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
+}
+
+#gallery02 .inner {
+	max-width: 100%;
+}
+
+#gallery02 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery02 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery02 ul li .caption p {
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	letter-spacing: 0.125rem;
+	font-size: 0.75em;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+#gallery02 ul {
+	gap: 0.5rem;
+}
+
+#gallery02 ul li .thumbnail {
+	display: block;
+}
+
+#gallery02 ul li img {
+	height: auto;
+	max-height: 10.375rem;
+}
+
+#gallery02 ul li .thumbnail img {
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery02 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
+}
+
 #gallery06 .inner {
 	max-width: 100%;
 }
@@ -1614,12 +1727,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery06 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
 	line-height: 1.25;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 #gallery06 ul {
@@ -1632,7 +1745,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery06 ul li img {
 	height: auto;
-	max-height: 9.75rem;
+	max-height: 10.375rem;
 }
 
 #gallery06 ul li .thumbnail img {
@@ -1668,7 +1781,7 @@ th {
 
 #table02 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
@@ -1685,6 +1798,7 @@ th {
 }
 
 #table02 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1697,17 +1811,17 @@ th {
 }
 
 #table02 thead {
-	background-color: rgba(0,0,0,0.184);
+	background-color: rgba(255,255,255,0.184);
 }
 
 #table02 th, #table02 td {
-	border: solid 1px #000000;
+	border: solid 1px #FFFFFF;
 	padding: 0.5rem 0.6875rem;
 }
 
 #table04 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
@@ -1724,6 +1838,7 @@ th {
 }
 
 #table04 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1736,17 +1851,17 @@ th {
 }
 
 #table04 thead {
-	background-color: rgba(0,0,0,0.184);
+	background-color: rgba(255,255,255,0.184);
 }
 
 #table04 th, #table04 td {
-	border: solid 1px #000000;
+	border: solid 1px #FFFFFF;
 	padding: 0.5rem 0.6875rem;
 }
 
 #table01 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
@@ -1763,6 +1878,7 @@ th {
 }
 
 #table01 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1775,17 +1891,17 @@ th {
 }
 
 #table01 thead {
-	background-color: rgba(0,0,0,0.184);
+	background-color: rgba(255,255,255,0.184);
 }
 
 #table01 th, #table01 td {
-	border: solid 1px #000000;
+	border: solid 1px #FFFFFF;
 	padding: 0.5rem 0.6875rem;
 }
 
 #table03 {
 	text-align: center;
-	color: #000000;
+	color: #FFFFFF;
 	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.125rem;
 	font-size: 0.75em;
@@ -1802,6 +1918,7 @@ th {
 }
 
 #table03 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1814,11 +1931,11 @@ th {
 }
 
 #table03 thead {
-	background-color: rgba(0,0,0,0.184);
+	background-color: rgba(255,255,255,0.184);
 }
 
 #table03 th, #table03 td {
-	border: solid 1px #000000;
+	border: solid 1px #FFFFFF;
 	padding: 0.5rem 0.6875rem;
 }
 
@@ -1930,90 +2047,6 @@ th {
 	
 	#main > .inner > footer > .full:last-child {
 		margin-bottom: -3.125rem !important;
-	}
-	
-	#divider04:not(:first-child) {
-		margin-top: 0.25rem !important;
-	}
-	
-	#divider04:not(:last-child) {
-		margin-bottom: 0.25rem !important;
-	}
-	
-	#divider04:before {
-		width: 3rem;
-	}
-	
-	#divider05:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider05:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider05:before {
-		width: 32rem;
-	}
-	
-	#divider06:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider06:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider06:before {
-		width: 32rem;
-	}
-	
-	#divider03:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider03:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider03:before {
-		width: 32rem;
-	}
-	
-	#divider07:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider07:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider07:before {
-		width: 32rem;
-	}
-	
-	#divider02:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider02:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider02:before {
-		width: 32rem;
-	}
-	
-	#divider01:not(:first-child) {
-		margin-top: 1.75rem !important;
-	}
-	
-	#divider01:not(:last-child) {
-		margin-bottom: 1.75rem !important;
-	}
-	
-	#divider01:before {
-		width: 32rem;
 	}
 	
 	#columns03 {
@@ -2212,6 +2245,78 @@ th {
 		width: auto;
 	}
 	
+	#divider05:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider05:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider05:before {
+		width: 32rem;
+	}
+	
+	#divider04:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider04:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider04:before {
+		width: 32rem;
+	}
+	
+	#divider02:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider02:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider02:before {
+		width: 32rem;
+	}
+	
+	#divider03:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider03:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider03:before {
+		width: 32rem;
+	}
+	
+	#divider06:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider06:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider06:before {
+		width: 32rem;
+	}
+	
+	#divider07:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider07:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider07:before {
+		width: 32rem;
+	}
+	
 	#text01 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -2316,6 +2421,16 @@ th {
 		font-size: 1em;
 	}
 	
+	#buttons04 {
+		gap: 0.75rem;
+	}
+	
+	#buttons04 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 1rem);
+		font-size: 1em;
+	}
+	
 	#buttons03 {
 		gap: 0.75rem;
 	}
@@ -2350,6 +2465,26 @@ th {
 		max-height: 9.1875rem;
 	}
 	
+	#gallery01 ul li .caption p {
+		letter-spacing: 0.125rem;
+		font-size: 0.75em;
+		line-height: 1.25;
+	}
+	
+	#gallery01 ul li img {
+		max-height: 7.5rem;
+	}
+	
+	#gallery02 ul li .caption p {
+		letter-spacing: 0.125rem;
+		font-size: 0.75em;
+		line-height: 1.25;
+	}
+	
+	#gallery02 ul li img {
+		max-height: 7.78125rem;
+	}
+	
 	#gallery06 ul li .caption p {
 		letter-spacing: 0.125rem;
 		font-size: 0.75em;
@@ -2357,7 +2492,7 @@ th {
 	}
 	
 	#gallery06 ul li img {
-		max-height: 7.3125rem;
+		max-height: 7.78125rem;
 	}
 	
 	#table02 {
@@ -2434,6 +2569,16 @@ th {
 	}
 	
 	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons04 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons04 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -2548,6 +2693,10 @@ th {
 		gap: 0.5625rem;
 	}
 	
+	#buttons04 {
+		gap: 0.5625rem;
+	}
+	
 	#buttons03 {
 		gap: 0.5625rem;
 	}
@@ -2565,6 +2714,22 @@ th {
 	}
 	
 	#gallery05 ul {
+		gap: 0.375rem;
+	}
+	
+	#gallery01 ul li .caption p {
+		font-size: 0.75em;
+	}
+	
+	#gallery01 ul {
+		gap: 0.375rem;
+	}
+	
+	#gallery02 ul li .caption p {
+		font-size: 0.75em;
+	}
+	
+	#gallery02 ul {
 		gap: 0.375rem;
 	}
 	
