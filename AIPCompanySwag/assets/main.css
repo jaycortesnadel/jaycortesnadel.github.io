@@ -25,7 +25,7 @@ body:before {
 	width: 100vw;
 	z-index: 0;
 	background-image: url('images/bg.jpg');
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #FFFFFF;
@@ -170,7 +170,7 @@ deferred-script {
 	position: relative;
 	text-align: var(--alignment);
 	z-index: 1;
-	background-color: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.561);
 	box-shadow: 0rem 3rem 3.125rem 0rem rgba(44,42,54,0.451);
 	border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
 	transition: opacity 0.75s ease 0s,transform 0.75s ease 0s;
