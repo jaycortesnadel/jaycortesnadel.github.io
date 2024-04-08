@@ -922,6 +922,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text21 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Arial', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text21 a {
+	text-decoration: underline;
+}
+
+#text21 a:hover {
+	text-decoration: none;
+}
+
+#text21 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text20 {
 	text-align: center;
 	color: #000000;
@@ -2439,6 +2462,45 @@ th {
 	padding: 0.5rem 0.6875rem;
 }
 
+#table04 {
+	text-align: center;
+	color: #4D4D4D;
+	font-family: 'Arial', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table04 table {
+	text-align: center;
+}
+
+#table04 th {
+	text-align: center;
+}
+
+#table04 a {
+	text-decoration: underline;
+}
+
+#table04 a:hover {
+	text-decoration: none;
+}
+
+#table04 .table-inner {
+	width: 68rem;
+}
+
+#table04 thead {
+	background-color: rgba(11,58,91,0.184);
+}
+
+#table04 th, #table04 td {
+	border: solid 1px #0B3A5B;
+	padding: 0.5rem 0.6875rem;
+}
+
 #table05 {
 	text-align: center;
 	color: #4D4D4D;
@@ -3080,6 +3142,13 @@ th {
 		line-height: 1.25;
 	}
 	
+	#text21 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
 	#text20 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -3485,6 +3554,16 @@ th {
 		padding: 0.5rem 0.6875rem;
 	}
 	
+	#table04 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table04 th, #table04 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
 	#table05 {
 		letter-spacing: 0.021875rem;
 		font-size: 0.75em;
@@ -3869,6 +3948,10 @@ th {
 		font-size: 1em;
 	}
 	
+	#text21 {
+		font-size: 1em;
+	}
+	
 	#text20 {
 		font-size: 1em;
 	}
@@ -4026,6 +4109,10 @@ th {
 	}
 	
 	#table03 {
+		font-size: 0.75em;
+	}
+	
+	#table04 {
 		font-size: 0.75em;
 	}
 	
