@@ -10,25 +10,7 @@ body {
 	min-width: 320px;
 	overflow-x: hidden;
 	word-wrap: break-word;
-	background-color: #090714;
-}
-
-body:before {
-	background-attachment: scroll;
-	content: '';
-	display: block;
-	height: var(--background-height);
-	left: 0;
-	pointer-events: none;
-	position: fixed;
-	top: 0;
-	transform: scale(1);
-	width: 100vw;
-	z-index: 0;
-	background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.7578125%200%200%200%200%200%200.7578125%200%200%200%200%200%200.7578125%200%200%200%200%200%200.5%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E');
-	background-size: 512px;
-	background-position: center;
-	background-repeat: repeat;
+	background-color: #18181A;
 }
 
 :root {
@@ -340,7 +322,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text02 {
 	text-transform: uppercase;
-	color: #130D36;
+	color: #FFFFFF;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0.45rem;
 	width: calc(100% + 0.45rem);
@@ -370,7 +352,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text10 {
-	color: #070414;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
@@ -401,7 +383,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text13 {
 	text-align: center;
-	color: #474747;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	line-height: 1.625;
@@ -430,7 +412,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text05 {
 	text-align: center;
-	color: #474747;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
 	line-height: 1.625;
@@ -458,7 +440,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text07 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -486,7 +468,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text01 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -514,7 +496,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text09 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -542,7 +524,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text11 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -570,7 +552,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text04 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -598,7 +580,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text12 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -626,7 +608,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text06 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -654,7 +636,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text03 {
-	color: #94A1A6;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 0.025rem;
 	width: calc(100% + 0.025rem);
@@ -754,22 +736,22 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	white-space: nowrap;
 }
 
-#buttons01 {
+#buttons02 {
 	justify-content: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#buttons01:not(:first-child) {
+#buttons02:not(:first-child) {
 	margin-top: 1.25rem !important;
 }
 
-#buttons01:not(:last-child) {
+#buttons02:not(:last-child) {
 	margin-bottom: 1.25rem !important;
 }
 
-#buttons01 li a {
+#buttons02 li a {
 	display: inline-block;
 	width: auto;
 	height: 2.5rem;
@@ -789,19 +771,24 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-#buttons01 .button {
-	color: #474747;
-	border: solid 1px #CCCCCC;
+#buttons02 .button {
+	color: #FFFFFF;
+	border: solid 1px #C3AB56;
 }
 
-#buttons01 .button:hover {
-	border-color: #1CCBD6 !important;
-	color: #1CCBD6 !important;
+#buttons02 .button:hover {
+	border-color: #C3AB56 !important;
+	color: #C3AB56 !important;
 }
 
-#buttons01 .n01 {
-	color: #090714;
-	border: solid 1px #090714;
+#buttons02 .n01 {
+	color: #C3AB56;
+	border: solid 1px #C3AB56;
+}
+
+#buttons02 .n01:hover {
+	border-color: #FFFFFF !important;
+	color: #FFFFFF !important;
 }
 
 #buttons03 {
@@ -840,36 +827,41 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons03 .button {
-	color: #474747;
-	border: solid 1px #CCCCCC;
+	color: #FFFFFF;
+	border: solid 1px #C3AB56;
 }
 
 #buttons03 .button:hover {
-	border-color: #1CCBD6 !important;
-	color: #1CCBD6 !important;
+	border-color: #C3AB56 !important;
+	color: #C3AB56 !important;
 }
 
 #buttons03 .n01 {
-	color: #090714;
-	border: solid 1px #090714;
+	color: #C3AB56;
+	border: solid 1px #C3AB56;
 }
 
-#buttons02 {
+#buttons03 .n01:hover {
+	border-color: #FFFFFF !important;
+	color: #FFFFFF !important;
+}
+
+#buttons04 {
 	justify-content: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-#buttons02:not(:first-child) {
+#buttons04:not(:first-child) {
 	margin-top: 1.25rem !important;
 }
 
-#buttons02:not(:last-child) {
+#buttons04:not(:last-child) {
 	margin-bottom: 1.25rem !important;
 }
 
-#buttons02 li a {
+#buttons04 li a {
 	display: inline-block;
 	width: auto;
 	height: 2.5rem;
@@ -889,19 +881,24 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
 }
 
-#buttons02 .button {
-	color: #474747;
-	border: solid 1px #CCCCCC;
+#buttons04 .button {
+	color: #FFFFFF;
+	border: solid 1px #C3AB56;
 }
 
-#buttons02 .button:hover {
-	border-color: #1CCBD6 !important;
-	color: #1CCBD6 !important;
+#buttons04 .button:hover {
+	border-color: #C3AB56 !important;
+	color: #C3AB56 !important;
 }
 
-#buttons02 .n01 {
-	color: #090714;
-	border: solid 1px #090714;
+#buttons04 .n01 {
+	color: #C3AB56;
+	border: solid 1px #C3AB56;
+}
+
+#buttons04 .n01:hover {
+	border-color: #FFFFFF !important;
+	color: #FFFFFF !important;
 }
 
 .container {
@@ -952,7 +949,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	background-color: #FFFFFF;
+	background-color: #18181A;
 }
 
 #container01 > .wrapper > .inner {
@@ -1097,7 +1094,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container02 > .wrapper {
 	display: inline-block;
 	width: 50rem;
-	background-color: #FFFFFF;
+	background-color: #18181A;
 }
 
 #container02 > .wrapper > .inner {
@@ -1230,7 +1227,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container03 > .wrapper {
 	display: inline-block;
 	width: 50rem;
-	background-color: #FFFFFF;
+	background-color: #18181A;
 }
 
 #container03 > .wrapper > .inner {
@@ -1363,7 +1360,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #container04 > .wrapper {
 	display: inline-block;
 	width: 38rem;
-	background-color: #FFFFFF;
+	background-color: #18181A;
 }
 
 #container04 > .wrapper > .inner {
@@ -1554,12 +1551,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery03 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.075rem;
 	font-size: 0.5em;
 	line-height: 1.5;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #gallery03 ul {
@@ -1596,12 +1593,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery07 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.075rem;
 	font-size: 0.5em;
 	line-height: 1.5;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #gallery07 ul {
@@ -1638,12 +1635,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery08 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.075rem;
 	font-size: 0.5em;
 	line-height: 1.5;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #gallery08 ul {
@@ -1680,12 +1677,12 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery09 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	letter-spacing: 0.075rem;
 	font-size: 0.5em;
 	line-height: 1.5;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 #gallery09 ul {
@@ -1722,12 +1719,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #gallery10 ul li .caption p {
 	padding-bottom: 0rem;
 	padding-top: 1rem;
-	color: #000000;
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 0.075rem;
+	color: #FFFFFF;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	font-size: 0.5em;
-	line-height: 1.5;
-	font-weight: 500;
+	line-height: 1;
+	font-weight: 400;
 }
 
 #gallery10 ul {
@@ -1741,7 +1737,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #gallery10 ul li img {
 	height: auto;
-	max-height: 15rem;
+	max-height: 15.5rem;
 }
 
 #gallery10 ul li .thumbnail img {
@@ -1780,7 +1776,7 @@ th {
 }
 
 #table03 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -1788,6 +1784,7 @@ th {
 }
 
 #table03 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1800,11 +1797,11 @@ th {
 }
 
 #table03 thead {
-	background-color: rgba(204,204,204,0.184);
+	background-color: rgba(255,255,255,0.184);
 }
 
 #table03 th, #table03 td {
-	border: solid 1px #CCCCCC;
+	border: solid 1px #FFFFFF;
 	padding: 0.5rem 0.6875rem;
 }
 
@@ -1817,7 +1814,7 @@ th {
 }
 
 #table04 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -1825,6 +1822,7 @@ th {
 }
 
 #table04 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1854,7 +1852,7 @@ th {
 }
 
 #table02 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -1862,6 +1860,7 @@ th {
 }
 
 #table02 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -1891,7 +1890,7 @@ th {
 }
 
 #table01 {
-	color: #000000;
+	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
 	line-height: 1.5;
@@ -1899,6 +1898,7 @@ th {
 }
 
 #table01 a {
+	color: #000000;
 	text-decoration: underline;
 }
 
@@ -2307,19 +2307,19 @@ th {
 		width: 100% !important;
 	}
 	
-	#buttons01 {
+	#buttons02 {
 		gap: 1rem;
 	}
 	
-	#buttons01:not(:first-child) {
+	#buttons02:not(:first-child) {
 		margin-top: 0.9375rem !important;
 	}
 	
-	#buttons01:not(:last-child) {
+	#buttons02:not(:last-child) {
 		margin-bottom: 0.9375rem !important;
 	}
 	
-	#buttons01 li a {
+	#buttons02 li a {
 		letter-spacing: 0.25rem;
 		padding-left: calc(0.25rem + 1.25rem);
 		font-size: 0.625em;
@@ -2343,19 +2343,19 @@ th {
 		font-size: 0.625em;
 	}
 	
-	#buttons02 {
+	#buttons04 {
 		gap: 1rem;
 	}
 	
-	#buttons02:not(:first-child) {
+	#buttons04:not(:first-child) {
 		margin-top: 0.9375rem !important;
 	}
 	
-	#buttons02:not(:last-child) {
+	#buttons04:not(:last-child) {
 		margin-bottom: 0.9375rem !important;
 	}
 	
-	#buttons02 li a {
+	#buttons04 li a {
 		letter-spacing: 0.25rem;
 		padding-left: calc(0.25rem + 1.25rem);
 		font-size: 0.625em;
@@ -2732,13 +2732,13 @@ th {
 	}
 	
 	#gallery10 ul li .caption p {
-		letter-spacing: 0.075rem;
+		letter-spacing: 0rem;
 		font-size: 0.5em;
-		line-height: 1.5;
+		line-height: 1;
 	}
 	
 	#gallery10 ul li img {
-		max-height: 11.25rem;
+		max-height: 11.625rem;
 	}
 	
 	#table03 {
@@ -2787,12 +2787,12 @@ th {
 		--spacing: 0.65625rem;
 	}
 	
-	#buttons01 {
+	#buttons02 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
-	#buttons01 li a {
+	#buttons02 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -2807,12 +2807,12 @@ th {
 		width: 100%;
 	}
 	
-	#buttons02 {
+	#buttons04 {
 		flex-direction: column;
 		flex-wrap: nowrap;
 	}
 	
-	#buttons02 li a {
+	#buttons04 li a {
 		max-width: 32rem;
 		width: 100%;
 	}
@@ -2907,7 +2907,7 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#buttons01 {
+	#buttons02 {
 		gap: 0.75rem;
 	}
 	
@@ -2915,7 +2915,7 @@ th {
 		gap: 0.75rem;
 	}
 	
-	#buttons02 {
+	#buttons04 {
 		gap: 0.75rem;
 	}
 	
