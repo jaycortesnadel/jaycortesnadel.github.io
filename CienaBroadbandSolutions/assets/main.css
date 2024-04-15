@@ -295,6 +295,41 @@ body.is-instant:after {
 	transition: none !important;
 }
 
+@keyframes loading-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.deferred:before {
+	content: '';
+	display: block;
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -2rem 0 0 -2rem;
+	animation: loading-spinner 1s infinite linear;
+	transition: opacity 0.25s ease;
+	transition-delay: 0.5s;
+	opacity: 0;
+	z-index: -1;
+	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTZweCIgaGVpZ2h0PSI5NnB4IiB2aWV3Qm94PSIwIDAgOTYgOTYiIHpvb21BbmRQYW49ImRpc2FibGUiPjxzdHlsZT5jaXJjbGUge2ZpbGw6IHRyYW5zcGFyZW50OyBzdHJva2U6ICNmZmY7IHN0cm9rZS13aWR0aDogMS41cHg7IH08L3N0eWxlPjxkZWZzPjxjbGlwUGF0aCBpZD0iY29ybmVyIj48cG9seWdvbiBwb2ludHM9IjAsMCA0OCwwIDQ4LDQ4IDk2LDQ4IDk2LDk2IDAsOTYiIC8+PC9jbGlwUGF0aD48L2RlZnM+PGcgY2xpcC1wYXRoPSJ1cmwoI2Nvcm5lcikiPjxjaXJjbGUgY3g9IjQ4IiBjeT0iNDgiIHI9IjMyIi8+PC9nPjwvc3ZnPg==');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 3rem;
+}
+
+.deferred.loading:before {
+	opacity: 0.35;
+	z-index: 0;
+}
+
 .image {
 	display: block;
 	line-height: 0;
@@ -341,6 +376,299 @@ body.is-instant:after {
 
 #image02 .frame img {
 	transition: none;
+}
+
+h1, h2, h3, p {
+	direction: var(--site-language-direction);
+	position: relative;
+}
+
+h1 span.p, h2 span.p, h3 span.p, p span.p {
+	display: block;
+	position: relative;
+}
+
+h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 strong, h3 strong, p strong, h1 a, h2 a, h3 a, p a, h1 code, h2 code, h3 code, p code, h1 mark, h2 mark, h3 mark, p mark, h1 spoiler-text, h2 spoiler-text, h3 spoiler-text, p spoiler-text {
+	-webkit-text-fill-color: currentcolor;
+}
+
+#text11 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text11 a {
+	text-decoration: underline;
+}
+
+#text11 a:hover {
+	text-decoration: none;
+}
+
+#text11 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text15 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text15 a {
+	text-decoration: underline;
+}
+
+#text15 a:hover {
+	text-decoration: none;
+}
+
+#text15 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text16 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text16 a {
+	text-decoration: underline;
+}
+
+#text16 a:hover {
+	text-decoration: none;
+}
+
+#text16 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text06 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text06 a {
+	text-decoration: underline;
+}
+
+#text06 a:hover {
+	text-decoration: none;
+}
+
+#text06 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text04 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text04 a {
+	text-decoration: underline;
+}
+
+#text04 a:hover {
+	text-decoration: none;
+}
+
+#text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text03 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text05 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text05 a {
+	text-decoration: underline;
+}
+
+#text05 a:hover {
+	text-decoration: none;
+}
+
+#text05 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text10 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.625em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text10 a {
+	text-decoration: underline;
+}
+
+#text10 a:hover {
+	text-decoration: none;
+}
+
+#text10 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text12 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.5em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text12 a {
+	text-decoration: underline;
+}
+
+#text12 a:hover {
+	text-decoration: none;
+}
+
+#text12 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text01 {
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text01 a {
+	text-decoration: underline;
+}
+
+#text01 a:hover {
+	text-decoration: none;
+}
+
+#text01 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text02 {
+	color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.75em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text02 a {
+	text-decoration: underline;
+}
+
+#text02 a:hover {
+	text-decoration: none;
+}
+
+#text02 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+.buttons {
+	cursor: default;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	letter-spacing: 0;
+	padding: 0;
+}
+
+.buttons li {
+	max-width: 100%;
+}
+
+.buttons li a {
+	align-items: center;
+	justify-content: center;
+	max-width: 100%;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#buttons01 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons01 li a {
+	display: inline-block;
+	width: auto;
+	height: 2.5rem;
+	line-height: calc(2.5rem - 2px);
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	border-radius: 0.625rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons01 .button {
+	color: #DC0000;
+	border: solid 1px #DC0000;
 }
 
 .gallery .inner {
@@ -901,228 +1229,6 @@ body.is-instant:after {
 	transform: scale(1.1125);
 }
 
-h1, h2, h3, p {
-	direction: var(--site-language-direction);
-	position: relative;
-}
-
-h1 span.p, h2 span.p, h3 span.p, p span.p {
-	display: block;
-	position: relative;
-}
-
-h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 strong, h3 strong, p strong, h1 a, h2 a, h3 a, p a, h1 code, h2 code, h3 code, p code, h1 mark, h2 mark, h3 mark, p mark, h1 spoiler-text, h2 spoiler-text, h3 spoiler-text, p spoiler-text {
-	-webkit-text-fill-color: currentcolor;
-}
-
-#text15 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text15 a {
-	text-decoration: underline;
-}
-
-#text15 a:hover {
-	text-decoration: none;
-}
-
-#text15 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text16 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text16 a {
-	text-decoration: underline;
-}
-
-#text16 a:hover {
-	text-decoration: none;
-}
-
-#text16 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text06 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text06 a {
-	text-decoration: underline;
-}
-
-#text06 a:hover {
-	text-decoration: none;
-}
-
-#text06 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text11 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text11 a {
-	text-decoration: underline;
-}
-
-#text11 a:hover {
-	text-decoration: none;
-}
-
-#text11 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text03 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text03 a {
-	text-decoration: underline;
-}
-
-#text03 a:hover {
-	text-decoration: none;
-}
-
-#text03 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text05 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text05 a {
-	text-decoration: underline;
-}
-
-#text05 a:hover {
-	text-decoration: none;
-}
-
-#text05 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text10 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text10 a {
-	text-decoration: underline;
-}
-
-#text10 a:hover {
-	text-decoration: none;
-}
-
-#text10 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text12 {
-	text-align: center;
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.625em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text12 a {
-	text-decoration: underline;
-}
-
-#text12 a:hover {
-	text-decoration: none;
-}
-
-#text12 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text01 {
-	color: #000000;
-	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-	font-size: 1em;
-	line-height: 1.625;
-	font-weight: 400;
-}
-
-#text01 a {
-	text-decoration: underline;
-}
-
-#text01 a:hover {
-	text-decoration: none;
-}
-
-#text01 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text02 {
-	color: #000000;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 0.75em;
-	line-height: 1.625;
-	font-weight: 300;
-}
-
-#text02 a {
-	text-decoration: underline;
-}
-
-#text02 a:hover {
-	text-decoration: none;
-}
-
-#text02 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
 .container {
 	position: relative;
 }
@@ -1601,6 +1707,92 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-bottom: -3.5rem !important;
 	}
 	
+	#text11 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#text15 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.625em;
+		line-height: 1.625;
+	}
+	
+	#text16 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.5em;
+		line-height: 1.625;
+	}
+	
+	#text06 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.625em;
+		line-height: 1.625;
+	}
+	
+	#text04 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.5em;
+		line-height: 1.625;
+	}
+	
+	#text03 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.625em;
+		line-height: 1.625;
+	}
+	
+	#text05 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.5em;
+		line-height: 1.625;
+	}
+	
+	#text10 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.625em;
+		line-height: 1.625;
+	}
+	
+	#text12 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.5em;
+		line-height: 1.625;
+	}
+	
+	#text01 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#text02 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.75em;
+		line-height: 1.625;
+	}
+	
+	#buttons01 {
+		gap: 0.75rem;
+	}
+	
+	#buttons01 li a {
+		letter-spacing: 0rem;
+		font-size: 1em;
+	}
+	
 	.gallery-modal .close {
 		background-position: top 0.5rem right 0.5rem;
 	}
@@ -1635,76 +1827,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#gallery10 ul li img {
 		max-height: 2.53125rem;
-	}
-	
-	#text15 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text16 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text06 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text11 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text03 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text05 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text10 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text12 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.625em;
-		line-height: 1.625;
-	}
-	
-	#text01 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 1em;
-		line-height: 1.625;
-	}
-	
-	#text02 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.75em;
-		line-height: 1.625;
 	}
 	
 	
@@ -1923,6 +2045,16 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		padding: 0;
 	}
 	
+	#buttons01 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
 	#container01 > .wrapper > .inner {
 		--spacing: 0.65625rem;
 	}
@@ -1961,6 +2093,54 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-bottom: -2.625rem !important;
 	}
 	
+	#text11 {
+		font-size: 1em;
+	}
+	
+	#text15 {
+		font-size: 0.625em;
+	}
+	
+	#text16 {
+		font-size: 0.5em;
+	}
+	
+	#text06 {
+		font-size: 0.625em;
+	}
+	
+	#text04 {
+		font-size: 0.5em;
+	}
+	
+	#text03 {
+		font-size: 0.625em;
+	}
+	
+	#text05 {
+		font-size: 0.5em;
+	}
+	
+	#text10 {
+		font-size: 0.625em;
+	}
+	
+	#text12 {
+		font-size: 0.5em;
+	}
+	
+	#text01 {
+		font-size: 1em;
+	}
+	
+	#text02 {
+		font-size: 0.75em;
+	}
+	
+	#buttons01 {
+		gap: 0.5625rem;
+	}
+	
 	#gallery13 ul {
 		gap: 0.375rem;
 	}
@@ -1991,46 +2171,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#gallery10 ul {
 		gap: 0.28125rem;
-	}
-	
-	#text15 {
-		font-size: 0.625em;
-	}
-	
-	#text16 {
-		font-size: 0.625em;
-	}
-	
-	#text06 {
-		font-size: 0.625em;
-	}
-	
-	#text11 {
-		font-size: 0.625em;
-	}
-	
-	#text03 {
-		font-size: 0.625em;
-	}
-	
-	#text05 {
-		font-size: 0.625em;
-	}
-	
-	#text10 {
-		font-size: 0.625em;
-	}
-	
-	#text12 {
-		font-size: 0.625em;
-	}
-	
-	#text01 {
-		font-size: 1em;
-	}
-	
-	#text02 {
-		font-size: 0.75em;
 	}
 	
 	#container01 > .wrapper > .inner {
