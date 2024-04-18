@@ -328,19 +328,19 @@ body.is-instant:after {
 	border-bottom-right-radius: inherit;
 }
 
-#image01 .frame {
+#image02 .frame {
 	max-width: 100%;
-	width: auto;
+	width: 705px;
 	transition: none;
 }
 
-#image01 .frame img {
+#image02 .frame img {
 	transition: none;
 }
 
 #image03 .frame {
 	max-width: 100%;
-	width: auto;
+	width: 705px;
 	transition: none;
 }
 
@@ -348,13 +348,13 @@ body.is-instant:after {
 	transition: none;
 }
 
-#image02 .frame {
+#image01 .frame {
 	max-width: 100%;
-	width: auto;
+	width: 705px;
 	transition: none;
 }
 
-#image02 .frame img {
+#image01 .frame img {
 	transition: none;
 }
 
