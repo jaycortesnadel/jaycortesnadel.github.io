@@ -1059,7 +1059,7 @@
 								function() { 
 									gtag('event', 'page_view', {
 										'page_title': 'Form',
-										'page_location': 'https://fasoifhdlk.carrd.co/#form',
+										'page_location': '/#form',
 									});
 								},
 							],
@@ -1071,7 +1071,7 @@
 								function() { 
 									gtag('event', 'page_view', {
 										'page_title': 'Thankyou',
-										'page_location': 'https://fasoifhdlk.carrd.co/#thankyou',
+										'page_location': '/#thankyou',
 									});
 								},
 							],
@@ -1083,7 +1083,7 @@
 								function() { 
 									gtag('event', 'page_view', {
 										'page_title': 'Home',
-										'page_location': 'https://fasoifhdlk.carrd.co',
+										'page_location': '',
 									});
 								},
 							],
