@@ -328,16 +328,6 @@ body.is-instant:after {
 	border-bottom-right-radius: inherit;
 }
 
-#image02 .frame {
-	max-width: 100%;
-	width: 705px;
-	transition: none;
-}
-
-#image02 .frame img {
-	transition: none;
-}
-
 #image03 .frame {
 	max-width: 100%;
 	width: 705px;
@@ -370,34 +360,6 @@ h1 span.p, h2 span.p, h3 span.p, p span.p {
 
 h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 strong, h3 strong, p strong, h1 a, h2 a, h3 a, p a, h1 code, h2 code, h3 code, p code, h1 mark, h2 mark, h3 mark, p mark, h1 spoiler-text, h2 spoiler-text, h3 spoiler-text, p spoiler-text {
 	-webkit-text-fill-color: currentcolor;
-}
-
-#text03:not(:first-child) {
-	margin-top: 3rem !important;
-}
-
-#text03:not(:last-child) {
-	margin-bottom: 3rem !important;
-}
-
-#text03 {
-	color: #000000;
-	font-family: 'Arial', sans-serif;
-	font-size: 1em;
-	line-height: 1.5;
-	font-weight: 400;
-}
-
-#text03 a {
-	text-decoration: underline;
-}
-
-#text03 a:hover {
-	text-decoration: none;
-}
-
-#text03 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
 }
 
 #text02:not(:first-child) {
@@ -474,63 +436,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #text04 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
-}
-
-.buttons {
-	cursor: default;
-	display: flex;
-	justify-content: var(--flex-alignment);
-	letter-spacing: 0;
-	padding: 0;
-}
-
-.buttons li {
-	max-width: 100%;
-}
-
-.buttons li a {
-	align-items: center;
-	justify-content: center;
-	max-width: 100%;
-	text-align: center;
-	text-decoration: none;
-	vertical-align: middle;
-	white-space: nowrap;
-}
-
-#buttons01 {
-	gap: 0.75rem;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#buttons01 li a {
-	display: inline-block;
-	width: auto;
-	height: 2.5rem;
-	line-height: calc(2.5rem - 2px);
-	padding: 0 1.25rem;
-	vertical-align: middle;
-	font-family: 'Arial', sans-serif;
-	letter-spacing: 0.025rem;
-	padding-left: calc(0.025rem + 1.25rem);
-	font-size: 0.75em;
-	font-weight: 400;
-	border-radius: 0.625rem;
-	direction: var(--site-language-direction);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-}
-
-#buttons01 .button {
-	color: #000000;
-	border: solid 1px #000000;
-}
-
-#buttons01 .button:hover {
-	border-color: #25869C !important;
-	color: #25869C !important;
 }
 
 .container {
@@ -773,21 +678,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-top: -3.125rem !important;
 	}
 	
-	#text03:not(:first-child) {
-		margin-top: 2.25rem !important;
-	}
-	
-	#text03:not(:last-child) {
-		margin-bottom: 2.25rem !important;
-	}
-	
-	#text03 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 1em;
-		line-height: 1.5;
-	}
-	
 	#text02:not(:first-child) {
 		margin-top: 2.625rem !important;
 	}
@@ -817,16 +707,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: calc(100% + 0.021875rem);
 		font-size: 0.75em;
 		line-height: 1.75;
-	}
-	
-	#buttons01 {
-		gap: 0.75rem;
-	}
-	
-	#buttons01 li a {
-		letter-spacing: 0.025rem;
-		padding-left: calc(0.025rem + 1.25rem);
-		font-size: 0.75em;
 	}
 	
 	#columns04 {
@@ -937,16 +817,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 1.203125rem;
 	}
 	
-	#buttons01 {
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-	
-	#buttons01 li a {
-		max-width: 32rem;
-		width: 100%;
-	}
-	
 	#columns04 > .wrapper > .inner {
 		--spacing: 0.875rem;
 	}
@@ -981,10 +851,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		margin-top: -2.34375rem !important;
 	}
 	
-	#text03 {
-		font-size: 1em;
-	}
-	
 	#text02 {
 		font-size: 1em;
 	}
@@ -995,10 +861,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#text04 {
 		font-size: 0.75em;
-	}
-	
-	#buttons01 {
-		gap: 0.5625rem;
 	}
 	
 	#columns04 > .wrapper > .inner {

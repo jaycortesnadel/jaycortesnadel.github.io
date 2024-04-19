@@ -1053,25 +1053,13 @@
 		
 				},
 				sections = {
-					'form': {
-						events: {
-							onopen: [
-								function() { 
-									gtag('event', 'page_view', {
-										'page_title': 'Form',
-										'page_location': '/#form',
-									});
-								},
-							],
-						},
-					},
 					'thankyou': {
 						events: {
 							onopen: [
 								function() { 
 									gtag('event', 'page_view', {
 										'page_title': 'Thankyou',
-										'page_location': '/#thankyou',
+										'page_location': 'https://denik2r98.carrd.co/#thankyou',
 									});
 								},
 							],
@@ -1083,7 +1071,7 @@
 								function() { 
 									gtag('event', 'page_view', {
 										'page_title': 'Home',
-										'page_location': '',
+										'page_location': 'https://denik2r98.carrd.co',
 									});
 								},
 							],
