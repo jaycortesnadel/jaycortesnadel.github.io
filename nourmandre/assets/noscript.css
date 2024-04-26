@@ -1,22 +1,3 @@
-body:before {
-	background-attachment: scroll;
-	content: '';
-	display: block;
-	height: var(--background-height);
-	left: 0;
-	pointer-events: none;
-	position: fixed;
-	top: 0;
-	transform: scale(1);
-	width: 100vw;
-	z-index: 0;
-	background-image: url('images/bg-5e906dd2.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: #FFFFFF;
-}
-
 body {
 	overflow: auto !important;
 }
