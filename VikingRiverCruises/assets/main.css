@@ -599,15 +599,30 @@ hr:before {
 	border-radius: 0px;
 }
 
-#divider02:not(:first-child) {
+#divider03:not(:first-child) {
 	margin-top: 1.75rem !important;
 }
 
-#divider02:not(:last-child) {
+#divider03:not(:last-child) {
 	margin-bottom: 1.75rem !important;
 }
 
-#divider02:before {
+#divider03:before {
+	width: 32rem;
+	background-color: #000000;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider01:not(:first-child) {
+	margin-top: 1.75rem !important;
+}
+
+#divider01:not(:last-child) {
+	margin-bottom: 1.75rem !important;
+}
+
+#divider01:before {
 	width: 32rem;
 	background-color: #000000;
 	height: 1px;
@@ -1109,15 +1124,27 @@ th {
 		width: 32rem;
 	}
 	
-	#divider02:not(:first-child) {
+	#divider03:not(:first-child) {
 		margin-top: 1.75rem !important;
 	}
 	
-	#divider02:not(:last-child) {
+	#divider03:not(:last-child) {
 		margin-bottom: 1.75rem !important;
 	}
 	
-	#divider02:before {
+	#divider03:before {
+		width: 32rem;
+	}
+	
+	#divider01:not(:first-child) {
+		margin-top: 1.75rem !important;
+	}
+	
+	#divider01:not(:last-child) {
+		margin-bottom: 1.75rem !important;
+	}
+	
+	#divider01:before {
 		width: 32rem;
 	}
 	
