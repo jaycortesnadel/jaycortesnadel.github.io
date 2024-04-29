@@ -2616,6 +2616,26 @@
 			scheme: 'dark',
 		});
 	
+	// Gallery: gallery03.
+		_lightboxGallery.init({
+			id: 'gallery03',
+			navigation: true,
+			captions: false,
+			mobile: true,
+			mobileNavigation: true,
+			scheme: 'dark',
+		});
+	
+	// Gallery: gallery05.
+		_lightboxGallery.init({
+			id: 'gallery05',
+			navigation: true,
+			captions: false,
+			mobile: true,
+			mobileNavigation: true,
+			scheme: 'dark',
+		});
+	
 	// Gallery: gallery01.
 		_lightboxGallery.init({
 			id: 'gallery01',

@@ -485,6 +485,46 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text04 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text04 a {
+	text-decoration: underline;
+}
+
+#text04 a:hover {
+	text-decoration: none;
+}
+
+#text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text03 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text06 {
 	color: #2F2E3B;
 	font-family: 'Roboto', sans-serif;
@@ -502,6 +542,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text06 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text01 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125em;
+	line-height: 1.625;
+	font-weight: 400;
+}
+
+#text01 a {
+	text-decoration: underline;
+}
+
+#text01 a:hover {
+	text-decoration: none;
+}
+
+#text01 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -1114,6 +1174,104 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transform: scale(1.1125);
 }
 
+#gallery03 {
+	text-align: center;
+}
+
+#gallery03 .inner {
+	max-width: 70rem;
+}
+
+#gallery03 ul {
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+#gallery03 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery03 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery03 ul li .caption p {
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 0.625em;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#gallery03 ul li .thumbnail {
+	display: block;
+}
+
+#gallery03 ul li img {
+	height: auto;
+	max-height: 9.625rem;
+}
+
+#gallery03 ul li .thumbnail img {
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery03 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
+}
+
+#gallery05 {
+	text-align: center;
+}
+
+#gallery05 .inner {
+	max-width: 70rem;
+}
+
+#gallery05 ul {
+	justify-content: center;
+	gap: 0.75rem;
+}
+
+#gallery05 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery05 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery05 ul li .caption p {
+	padding-bottom: 0rem;
+	padding-top: 1rem;
+	color: #000000;
+	font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 0.625em;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+#gallery05 ul li .thumbnail {
+	display: block;
+}
+
+#gallery05 ul li img {
+	height: auto;
+	max-height: 9.625rem;
+}
+
+#gallery05 ul li .thumbnail img {
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery05 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
+}
+
 #gallery01 {
 	text-align: center;
 }
@@ -1345,7 +1503,28 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.625;
 	}
 	
+	#text04 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.125em;
+		line-height: 1.625;
+	}
+	
+	#text03 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.125em;
+		line-height: 1.625;
+	}
+	
 	#text06 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1.125em;
+		line-height: 1.625;
+	}
+	
+	#text01 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1.125em;
@@ -1479,6 +1658,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		max-height: 14.34375rem;
 	}
 	
+	#gallery03 ul li .caption p {
+		letter-spacing: 0rem;
+		font-size: 0.625em;
+		line-height: 1.5;
+	}
+	
+	#gallery03 ul li img {
+		max-height: 7.21875rem;
+	}
+	
+	#gallery05 ul li .caption p {
+		letter-spacing: 0rem;
+		font-size: 0.625em;
+		line-height: 1.5;
+	}
+	
+	#gallery05 ul li img {
+		max-height: 7.21875rem;
+	}
+	
 	#gallery01 ul li .caption p {
 		letter-spacing: 0rem;
 		font-size: 0.625em;
@@ -1595,7 +1794,19 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1.125em;
 	}
 	
+	#text04 {
+		font-size: 1.125em;
+	}
+	
+	#text03 {
+		font-size: 1.125em;
+	}
+	
 	#text06 {
+		font-size: 1.125em;
+	}
+	
+	#text01 {
 		font-size: 1.125em;
 	}
 	
@@ -1632,6 +1843,22 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	}
 	
 	#gallery04 ul {
+		gap: 0.5625rem;
+	}
+	
+	#gallery03 ul li .caption p {
+		font-size: 0.625em;
+	}
+	
+	#gallery03 ul {
+		gap: 0.5625rem;
+	}
+	
+	#gallery05 ul li .caption p {
+		font-size: 0.625em;
+	}
+	
+	#gallery05 ul {
 		gap: 0.5625rem;
 	}
 	
