@@ -1,13 +1,7 @@
 /* Carrd Site JS | carrd.co | License: MIT */
 
 (function() {
- // Password protection
-    var correctPassword = "NadelTest";
-    var userPassword = prompt("Please enter your password");
-    if (userPassword !== correctPassword) {
-        alert("Incorrect password. Access denied.");
-        window.location.href = "https://www.google.com"; // Redirect to another URL
-        return; // Prevent the rest of the script from running }
+
 	// Main.
 		var	on = addEventListener,
 			off = removeEventListener,
