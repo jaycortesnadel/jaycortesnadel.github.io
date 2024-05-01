@@ -488,15 +488,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text15:not(:first-child) {
+#text01:not(:first-child) {
 	margin-top: 1rem !important;
 }
 
-#text15:not(:last-child) {
+#text01:not(:last-child) {
 	margin-bottom: 1rem !important;
 }
 
-#text15 {
+#text01 {
 	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
@@ -504,15 +504,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 500;
 }
 
-#text15 a {
+#text01 a {
 	text-decoration: underline;
 }
 
-#text15 a:hover {
+#text01 a:hover {
 	text-decoration: none;
 }
 
-#text15 span.p:nth-child(n + 2) {
+#text01 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -573,15 +573,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text01:not(:first-child) {
+#text15:not(:first-child) {
 	margin-top: 1rem !important;
 }
 
-#text01:not(:last-child) {
+#text15:not(:last-child) {
 	margin-bottom: 1rem !important;
 }
 
-#text01 {
+#text15 {
 	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
@@ -589,183 +589,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 500;
 }
 
-#text01 a {
+#text15 a {
 	text-decoration: underline;
 }
 
-#text01 a:hover {
+#text15 a:hover {
 	text-decoration: none;
 }
 
-#text01 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text23:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text23:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text23 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text23 a {
-	text-decoration: underline;
-}
-
-#text23 a:hover {
-	text-decoration: none;
-}
-
-#text23 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text12:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text12:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text12 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text12 a {
-	text-decoration: underline;
-}
-
-#text12 a:hover {
-	text-decoration: none;
-}
-
-#text12 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text11:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text11:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text11 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text11 a {
-	text-decoration: underline;
-}
-
-#text11 a:hover {
-	text-decoration: none;
-}
-
-#text11 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text04:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text04:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text04 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text04 a {
-	text-decoration: underline;
-}
-
-#text04 a:hover {
-	text-decoration: none;
-}
-
-#text04 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text21:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text21:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text21 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text21 a {
-	text-decoration: underline;
-}
-
-#text21 a:hover {
-	text-decoration: none;
-}
-
-#text21 span.p:nth-child(n + 2) {
-	margin-top: 1rem;
-}
-
-#text20:not(:first-child) {
-	margin-top: 1rem !important;
-}
-
-#text20:not(:last-child) {
-	margin-bottom: 1rem !important;
-}
-
-#text20 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#text20 a {
-	text-decoration: underline;
-}
-
-#text20 a:hover {
-	text-decoration: none;
-}
-
-#text20 span.p:nth-child(n + 2) {
+#text15 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -825,6 +657,174 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text23:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text23:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text23 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text23 a {
+	text-decoration: underline;
+}
+
+#text23 a:hover {
+	text-decoration: none;
+}
+
+#text23 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text12:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text12:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text12 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text12 a {
+	text-decoration: underline;
+}
+
+#text12 a:hover {
+	text-decoration: none;
+}
+
+#text12 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text21:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text21:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text21 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text21 a {
+	text-decoration: underline;
+}
+
+#text21 a:hover {
+	text-decoration: none;
+}
+
+#text21 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text20:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text20:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text20 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text20 a {
+	text-decoration: underline;
+}
+
+#text20 a:hover {
+	text-decoration: none;
+}
+
+#text20 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text04:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text04:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text04 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text04 a {
+	text-decoration: underline;
+}
+
+#text04 a:hover {
+	text-decoration: none;
+}
+
+#text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text06:not(:first-child) {
+	margin-top: 1rem !important;
+}
+
+#text06:not(:last-child) {
+	margin-bottom: 1rem !important;
+}
+
+#text06 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#text06 a {
+	text-decoration: underline;
+}
+
+#text06 a:hover {
+	text-decoration: none;
+}
+
+#text06 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text03:not(:first-child) {
 	margin-top: 2.625rem !important;
 }
@@ -865,6 +865,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 .buttons li {
 	max-width: 100%;
+	text-align: var(--alignment);
 }
 
 .buttons li a {
@@ -878,7 +879,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons01 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -933,7 +935,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons02 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -988,7 +991,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons03 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1043,7 +1047,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons05 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1098,7 +1103,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons06 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1153,7 +1159,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #buttons04 {
-	justify-content: center;
+	--flex-alignment: center;
+	--alignment: center;
 	gap: 1rem;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -2298,6 +2305,82 @@ th {
 	text-align: var(--site-language-alignment);
 }
 
+#table09 table {
+	text-align: center;
+}
+
+#table09 th {
+	text-align: center;
+}
+
+#table09 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#table09 a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+#table09 a:hover {
+	text-decoration: none;
+}
+
+#table09 .table-inner {
+	width: 40rem;
+}
+
+#table09 thead {
+	background-color: rgba(204,204,204,0.184);
+}
+
+#table09 th, #table09 td {
+	border: solid 1px #CCCCCC;
+	padding: 0.5rem 0.6875rem;
+}
+
+#table06 table {
+	text-align: center;
+}
+
+#table06 th {
+	text-align: center;
+}
+
+#table06 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.875em;
+	line-height: 1.5;
+	font-weight: 500;
+}
+
+#table06 a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+#table06 a:hover {
+	text-decoration: none;
+}
+
+#table06 .table-inner {
+	width: 40rem;
+}
+
+#table06 thead {
+	background-color: rgba(204,204,204,0.184);
+}
+
+#table06 th, #table06 td {
+	border: solid 1px #CCCCCC;
+	padding: 0.5rem 0.6875rem;
+}
+
 #table10 table {
 	text-align: center;
 }
@@ -2370,82 +2453,6 @@ th {
 }
 
 #table04 th, #table04 td {
-	border: solid 1px #CCCCCC;
-	padding: 0.5rem 0.6875rem;
-}
-
-#table03 table {
-	text-align: center;
-}
-
-#table03 th {
-	text-align: center;
-}
-
-#table03 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#table03 a {
-	color: #000000;
-	text-decoration: underline;
-}
-
-#table03 a:hover {
-	text-decoration: none;
-}
-
-#table03 .table-inner {
-	width: 40rem;
-}
-
-#table03 thead {
-	background-color: rgba(204,204,204,0.184);
-}
-
-#table03 th, #table03 td {
-	border: solid 1px #CCCCCC;
-	padding: 0.5rem 0.6875rem;
-}
-
-#table02 table {
-	text-align: center;
-}
-
-#table02 th {
-	text-align: center;
-}
-
-#table02 {
-	color: #FFFFFF;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 0.875em;
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-#table02 a {
-	color: #000000;
-	text-decoration: underline;
-}
-
-#table02 a:hover {
-	text-decoration: none;
-}
-
-#table02 .table-inner {
-	width: 40rem;
-}
-
-#table02 thead {
-	background-color: rgba(204,204,204,0.184);
-}
-
-#table02 th, #table02 td {
 	border: solid 1px #CCCCCC;
 	padding: 0.5rem 0.6875rem;
 }
@@ -2526,15 +2533,15 @@ th {
 	padding: 0.5rem 0.6875rem;
 }
 
-#table09 table {
+#table01 table {
 	text-align: center;
 }
 
-#table09 th {
+#table01 th {
 	text-align: center;
 }
 
-#table09 {
+#table01 {
 	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
@@ -2542,37 +2549,37 @@ th {
 	font-weight: 500;
 }
 
-#table09 a {
+#table01 a {
 	color: #000000;
 	text-decoration: underline;
 }
 
-#table09 a:hover {
+#table01 a:hover {
 	text-decoration: none;
 }
 
-#table09 .table-inner {
+#table01 .table-inner {
 	width: 40rem;
 }
 
-#table09 thead {
+#table01 thead {
 	background-color: rgba(204,204,204,0.184);
 }
 
-#table09 th, #table09 td {
+#table01 th, #table01 td {
 	border: solid 1px #CCCCCC;
 	padding: 0.5rem 0.6875rem;
 }
 
-#table06 table {
+#table02 table {
 	text-align: center;
 }
 
-#table06 th {
+#table02 th {
 	text-align: center;
 }
 
-#table06 {
+#table02 {
 	color: #FFFFFF;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 0.875em;
@@ -2580,24 +2587,24 @@ th {
 	font-weight: 500;
 }
 
-#table06 a {
+#table02 a {
 	color: #000000;
 	text-decoration: underline;
 }
 
-#table06 a:hover {
+#table02 a:hover {
 	text-decoration: none;
 }
 
-#table06 .table-inner {
+#table02 .table-inner {
 	width: 40rem;
 }
 
-#table06 thead {
+#table02 thead {
 	background-color: rgba(204,204,204,0.184);
 }
 
-#table06 th, #table06 td {
+#table02 th, #table02 td {
 	border: solid 1px #CCCCCC;
 	padding: 0.5rem 0.6875rem;
 }
@@ -2882,15 +2889,15 @@ th {
 		line-height: 1.5;
 	}
 	
-	#text15:not(:first-child) {
+	#text01:not(:first-child) {
 		margin-top: 0.75rem !important;
 	}
 	
-	#text15:not(:last-child) {
+	#text01:not(:last-child) {
 		margin-bottom: 0.75rem !important;
 	}
 	
-	#text15 {
+	#text01 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 0.875em;
@@ -2927,15 +2934,45 @@ th {
 		line-height: 1.5;
 	}
 	
-	#text01:not(:first-child) {
+	#text15:not(:first-child) {
 		margin-top: 0.75rem !important;
 	}
 	
-	#text01:not(:last-child) {
+	#text15:not(:last-child) {
 		margin-bottom: 0.75rem !important;
 	}
 	
-	#text01 {
+	#text15 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.875em;
+		line-height: 1.5;
+	}
+	
+	#text16:not(:first-child) {
+		margin-top: 0.75rem !important;
+	}
+	
+	#text16:not(:last-child) {
+		margin-bottom: 0.75rem !important;
+	}
+	
+	#text16 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 0.875em;
+		line-height: 1.5;
+	}
+	
+	#text19:not(:first-child) {
+		margin-top: 0.75rem !important;
+	}
+	
+	#text19:not(:last-child) {
+		margin-bottom: 0.75rem !important;
+	}
+	
+	#text19 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 0.875em;
@@ -2972,36 +3009,6 @@ th {
 		line-height: 1.5;
 	}
 	
-	#text11:not(:first-child) {
-		margin-top: 0.75rem !important;
-	}
-	
-	#text11:not(:last-child) {
-		margin-bottom: 0.75rem !important;
-	}
-	
-	#text11 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.875em;
-		line-height: 1.5;
-	}
-	
-	#text04:not(:first-child) {
-		margin-top: 0.75rem !important;
-	}
-	
-	#text04:not(:last-child) {
-		margin-bottom: 0.75rem !important;
-	}
-	
-	#text04 {
-		letter-spacing: 0rem;
-		width: 100%;
-		font-size: 0.875em;
-		line-height: 1.5;
-	}
-	
 	#text21:not(:first-child) {
 		margin-top: 0.75rem !important;
 	}
@@ -3032,30 +3039,30 @@ th {
 		line-height: 1.5;
 	}
 	
-	#text16:not(:first-child) {
+	#text04:not(:first-child) {
 		margin-top: 0.75rem !important;
 	}
 	
-	#text16:not(:last-child) {
+	#text04:not(:last-child) {
 		margin-bottom: 0.75rem !important;
 	}
 	
-	#text16 {
+	#text04 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 0.875em;
 		line-height: 1.5;
 	}
 	
-	#text19:not(:first-child) {
+	#text06:not(:first-child) {
 		margin-top: 0.75rem !important;
 	}
 	
-	#text19:not(:last-child) {
+	#text06:not(:last-child) {
 		margin-bottom: 0.75rem !important;
 	}
 	
-	#text19 {
+	#text06 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 0.875em;
@@ -3623,6 +3630,26 @@ th {
 		max-height: 4.3125rem;
 	}
 	
+	#table09 {
+		letter-spacing: 0rem;
+		font-size: 0.875em;
+		line-height: 1.5;
+	}
+	
+	#table09 th, #table09 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
+	#table06 {
+		letter-spacing: 0rem;
+		font-size: 0.875em;
+		line-height: 1.5;
+	}
+	
+	#table06 th, #table06 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
 	#table10 {
 		letter-spacing: 0rem;
 		font-size: 0.875em;
@@ -3640,26 +3667,6 @@ th {
 	}
 	
 	#table04 th, #table04 td {
-		padding: 0.5rem 0.6875rem;
-	}
-	
-	#table03 {
-		letter-spacing: 0rem;
-		font-size: 0.875em;
-		line-height: 1.5;
-	}
-	
-	#table03 th, #table03 td {
-		padding: 0.5rem 0.6875rem;
-	}
-	
-	#table02 {
-		letter-spacing: 0rem;
-		font-size: 0.875em;
-		line-height: 1.5;
-	}
-	
-	#table02 th, #table02 td {
 		padding: 0.5rem 0.6875rem;
 	}
 	
@@ -3683,23 +3690,23 @@ th {
 		padding: 0.5rem 0.6875rem;
 	}
 	
-	#table09 {
+	#table01 {
 		letter-spacing: 0rem;
 		font-size: 0.875em;
 		line-height: 1.5;
 	}
 	
-	#table09 th, #table09 td {
+	#table01 th, #table01 td {
 		padding: 0.5rem 0.6875rem;
 	}
 	
-	#table06 {
+	#table02 {
 		letter-spacing: 0rem;
 		font-size: 0.875em;
 		line-height: 1.5;
 	}
 	
-	#table06 th, #table06 td {
+	#table02 th, #table02 td {
 		padding: 0.5rem 0.6875rem;
 	}
 }
@@ -3835,7 +3842,7 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#text15 {
+	#text01 {
 		font-size: 0.875em;
 	}
 	
@@ -3847,7 +3854,15 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#text01 {
+	#text15 {
+		font-size: 0.875em;
+	}
+	
+	#text16 {
+		font-size: 0.875em;
+	}
+	
+	#text19 {
 		font-size: 0.875em;
 	}
 	
@@ -3859,14 +3874,6 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#text11 {
-		font-size: 0.875em;
-	}
-	
-	#text04 {
-		font-size: 0.875em;
-	}
-	
 	#text21 {
 		font-size: 0.875em;
 	}
@@ -3875,11 +3882,11 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#text16 {
+	#text04 {
 		font-size: 0.875em;
 	}
 	
-	#text19 {
+	#text06 {
 		font-size: 0.875em;
 	}
 	
@@ -4023,19 +4030,19 @@ th {
 		gap: 0.375rem;
 	}
 	
+	#table09 {
+		font-size: 0.875em;
+	}
+	
+	#table06 {
+		font-size: 0.875em;
+	}
+	
 	#table10 {
 		font-size: 0.875em;
 	}
 	
 	#table04 {
-		font-size: 0.875em;
-	}
-	
-	#table03 {
-		font-size: 0.875em;
-	}
-	
-	#table02 {
 		font-size: 0.875em;
 	}
 	
@@ -4047,11 +4054,11 @@ th {
 		font-size: 0.875em;
 	}
 	
-	#table09 {
+	#table01 {
 		font-size: 0.875em;
 	}
 	
-	#table06 {
+	#table02 {
 		font-size: 0.875em;
 	}
 }
