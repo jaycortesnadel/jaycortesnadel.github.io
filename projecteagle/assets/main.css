@@ -438,7 +438,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text02 {
-	text-align: center;
+	text-align: left;
 	color: #000000;
 	font-family: 'Lato', sans-serif;
 	letter-spacing: 0.125rem;
@@ -457,6 +457,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text02 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text10 {
+	text-align: right;
+	color: #000000;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text10 a {
+	text-decoration: underline;
+}
+
+#text10 a:hover {
+	text-decoration: none;
+}
+
+#text10 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -788,7 +811,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 
 #container04 > .wrapper {
 	display: inline-block;
-	width: 38rem;
+	width: 62rem;
 	background-color: transparent;
 }
 
@@ -912,11 +935,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #container04 > .wrapper > .inner > :nth-child(1) {
-	width: calc(50% + (var(--gutters) / 2));
+	width: calc(33.33333% + (var(--gutters) / 3));
 }
 
 #container04 > .wrapper > .inner > :nth-child(2) {
-	width: calc(50% + (var(--gutters) / 2));
+	width: calc(33.33333% + (var(--gutters) / 3));
+}
+
+#container04 > .wrapper > .inner > :nth-child(3) {
+	width: calc(33.33333% + (var(--gutters) / 3));
 }
 
 #container02 {
@@ -1829,6 +1856,13 @@ th {
 		line-height: 1.25;
 	}
 	
+	#text10 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
 	#text07 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -2019,6 +2053,15 @@ th {
 	}
 	
 	#container04 > .wrapper > .inner > :nth-child(2) {
+		--alignment: center;
+		--flex-alignment: center;
+		--indent-left: 1;
+		--indent-right: 1;
+		min-height: 100% !important;
+		width: 100% !important;
+	}
+	
+	#container04 > .wrapper > .inner > :nth-child(3) {
 		--alignment: center;
 		--flex-alignment: center;
 		--indent-left: 1;
@@ -2374,6 +2417,10 @@ th {
 	}
 	
 	#text02 {
+		font-size: 1em;
+	}
+	
+	#text10 {
 		font-size: 1em;
 	}
 	
