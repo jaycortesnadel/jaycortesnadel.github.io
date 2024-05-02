@@ -608,6 +608,29 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	-webkit-text-fill-color: currentcolor;
 }
 
+#text03 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text01 {
 	text-align: center;
 	color: #000000;
@@ -631,7 +654,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text06 {
+#text09 {
 	text-align: center;
 	color: #000000;
 	font-family: 'Poppins', sans-serif;
@@ -642,15 +665,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 400;
 }
 
-#text06 a {
+#text09 a {
 	text-decoration: underline;
 }
 
-#text06 a:hover {
+#text09 a:hover {
 	text-decoration: none;
 }
 
-#text06 span.p:nth-child(n + 2) {
+#text09 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -723,6 +746,98 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text10 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text10 a {
+	text-decoration: underline;
+}
+
+#text10 a:hover {
+	text-decoration: none;
+}
+
+#text10 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text11 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text11 a {
+	text-decoration: underline;
+}
+
+#text11 a:hover {
+	text-decoration: none;
+}
+
+#text11 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text12 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text12 a {
+	text-decoration: underline;
+}
+
+#text12 a:hover {
+	text-decoration: none;
+}
+
+#text12 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text06 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.125rem;
+	width: calc(100% + 0.125rem);
+	font-size: 1em;
+	line-height: 1.25;
+	font-weight: 400;
+}
+
+#text06 a {
+	text-decoration: underline;
+}
+
+#text06 a:hover {
+	text-decoration: none;
+}
+
+#text06 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text05 {
 	text-align: center;
 	color: #000000;
@@ -789,6 +904,66 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	text-decoration: none;
 	vertical-align: middle;
 	white-space: nowrap;
+}
+
+#buttons02 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons02 li a {
+	display: inline-block;
+	width: auto;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 1.25rem);
+	font-size: 0.75em;
+	font-weight: 400;
+	border-radius: 0rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons02 .button {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#buttons03 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons03 li a {
+	display: inline-block;
+	width: auto;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 1.25rem;
+	vertical-align: middle;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	padding-left: calc(0.025rem + 1.25rem);
+	font-size: 0.75em;
+	font-weight: 400;
+	border-radius: 0rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons03 .button {
+	background-color: #000000;
+	color: #FFFFFF;
 }
 
 #buttons01 {
@@ -1514,6 +1689,189 @@ hr:before {
 	width: 100%;
 }
 
+.table-wrapper {
+	max-width: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.table-inner {
+	display: inline-block;
+	max-width: 100%;
+}
+
+table {
+	direction: var(--site-language-direction);
+	text-align: var(--site-language-alignment);
+	width: 100%;
+}
+
+th {
+	font-weight: bolder;
+	text-align: var(--site-language-alignment);
+}
+
+#table02 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table02 table {
+	text-align: center;
+}
+
+#table02 th {
+	text-align: center;
+}
+
+#table02 a {
+	color: #4D4D4D;
+	text-decoration: underline;
+}
+
+#table02 a:hover {
+	text-decoration: none;
+}
+
+#table02 .table-inner {
+	width: 100%;
+}
+
+#table02 thead {
+	background-color: rgba(0,0,0,0.184);
+}
+
+#table02 th, #table02 td {
+	border: solid 1px #000000;
+	padding: 0.5rem 0.6875rem;
+}
+
+#table03 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table03 table {
+	text-align: center;
+}
+
+#table03 th {
+	text-align: center;
+}
+
+#table03 a {
+	color: #4D4D4D;
+	text-decoration: underline;
+}
+
+#table03 a:hover {
+	text-decoration: none;
+}
+
+#table03 .table-inner {
+	width: 100%;
+}
+
+#table03 thead {
+	background-color: rgba(0,0,0,0.184);
+}
+
+#table03 th, #table03 td {
+	border: solid 1px #000000;
+	padding: 0.5rem 0.6875rem;
+}
+
+#table04 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table04 table {
+	text-align: center;
+}
+
+#table04 th {
+	text-align: center;
+}
+
+#table04 a {
+	color: #4D4D4D;
+	text-decoration: underline;
+}
+
+#table04 a:hover {
+	text-decoration: none;
+}
+
+#table04 .table-inner {
+	width: 100%;
+}
+
+#table04 thead {
+	background-color: rgba(0,0,0,0.184);
+}
+
+#table04 th, #table04 td {
+	border: solid 1px #000000;
+	padding: 0.5rem 0.6875rem;
+}
+
+#table01 {
+	text-align: center;
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.025rem;
+	font-size: 0.75em;
+	line-height: 1.75;
+	font-weight: 400;
+}
+
+#table01 table {
+	text-align: center;
+}
+
+#table01 th {
+	text-align: center;
+}
+
+#table01 a {
+	color: #4D4D4D;
+	text-decoration: underline;
+}
+
+#table01 a:hover {
+	text-decoration: none;
+}
+
+#table01 .table-inner {
+	width: 100%;
+}
+
+#table01 thead {
+	background-color: rgba(0,0,0,0.184);
+}
+
+#table01 th, #table01 td {
+	border: solid 1px #000000;
+	padding: 0.5rem 0.6875rem;
+}
+
 @media (orientation: portrait) {
 	.gallery-modal {
 		grid-template-areas: "image" "caption";
@@ -1648,6 +2006,13 @@ hr:before {
 		margin-bottom: -3.125rem !important;
 	}
 	
+	#text03 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
 	#text01 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -1655,7 +2020,7 @@ hr:before {
 		line-height: 1.25;
 	}
 	
-	#text06 {
+	#text09 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
 		font-size: 1em;
@@ -1683,6 +2048,34 @@ hr:before {
 		line-height: 1.25;
 	}
 	
+	#text10 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
+	#text11 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
+	#text12 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
+	#text06 {
+		letter-spacing: 0.109375rem;
+		width: calc(100% + 0.109375rem);
+		font-size: 1em;
+		line-height: 1.25;
+	}
+	
 	#text05 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
@@ -1695,6 +2088,26 @@ hr:before {
 		width: calc(100% + 0.021875rem);
 		font-size: 0.75em;
 		line-height: 1.75;
+	}
+	
+	#buttons02 {
+		gap: 0.75rem;
+	}
+	
+	#buttons02 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 1.25rem);
+		font-size: 0.75em;
+	}
+	
+	#buttons03 {
+		gap: 0.75rem;
+	}
+	
+	#buttons03 li a {
+		letter-spacing: 0.025rem;
+		padding-left: calc(0.025rem + 1.25rem);
+		font-size: 0.75em;
 	}
 	
 	#buttons01 {
@@ -1970,6 +2383,46 @@ hr:before {
 		position: relative;
 		width: auto;
 	}
+	
+	#table02 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table02 th, #table02 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
+	#table03 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table03 th, #table03 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
+	#table04 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table04 th, #table04 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
+	#table01 {
+		letter-spacing: 0.021875rem;
+		font-size: 0.75em;
+		line-height: 1.75;
+	}
+	
+	#table01 th, #table01 td {
+		padding: 0.5rem 0.6875rem;
+	}
 }
 
 @media (max-width: 480px) {
@@ -1979,6 +2432,26 @@ hr:before {
 	
 	#main > .inner {
 		--spacing: 1.3125rem;
+	}
+	
+	#buttons02 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons02 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons03 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons03 li a {
+		max-width: 32rem;
+		width: 100%;
 	}
 	
 	#buttons01 {
@@ -2029,11 +2502,15 @@ hr:before {
 		margin-bottom: -2.34375rem !important;
 	}
 	
+	#text03 {
+		font-size: 1em;
+	}
+	
 	#text01 {
 		font-size: 1em;
 	}
 	
-	#text06 {
+	#text09 {
 		font-size: 1em;
 	}
 	
@@ -2049,12 +2526,36 @@ hr:before {
 		font-size: 1em;
 	}
 	
+	#text10 {
+		font-size: 1em;
+	}
+	
+	#text11 {
+		font-size: 1em;
+	}
+	
+	#text12 {
+		font-size: 1em;
+	}
+	
+	#text06 {
+		font-size: 1em;
+	}
+	
 	#text05 {
 		font-size: 1em;
 	}
 	
 	#text04 {
 		font-size: 0.75em;
+	}
+	
+	#buttons02 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons03 {
+		gap: 0.5625rem;
 	}
 	
 	#buttons01 {
@@ -2077,5 +2578,21 @@ hr:before {
 		--padding-horizontal: 0rem;
 		--padding-vertical: 0rem;
 		--spacing: 0.75rem;
+	}
+	
+	#table02 {
+		font-size: 0.75em;
+	}
+	
+	#table03 {
+		font-size: 0.75em;
+	}
+	
+	#table04 {
+		font-size: 0.75em;
+	}
+	
+	#table01 {
+		font-size: 0.75em;
 	}
 }
