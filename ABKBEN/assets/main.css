@@ -354,21 +354,6 @@ hr:before {
 	border-radius: 0px;
 }
 
-#divider01:not(:first-child) {
-	margin-top: 1.5rem !important;
-}
-
-#divider01:not(:last-child) {
-	margin-bottom: 1.5rem !important;
-}
-
-#divider01:before {
-	width: 32rem;
-	background-color: #555759;
-	height: 1px;
-	border-radius: 0px;
-}
-
 .image {
 	display: block;
 	line-height: 0;
@@ -597,138 +582,6 @@ hr:before {
 	width: 100%;
 }
 
-#container01 {
-	--alignment: center;
-	--flex-alignment: center;
-	--indent-left: 1;
-	--indent-right: 1;
-}
-
-#container01 > .wrapper {
-	display: inline-block;
-	width: 38rem;
-	background-color: transparent;
-}
-
-#container01 > .wrapper > .inner {
-	--gutters: 2rem;
-	--padding-horizontal: 0rem;
-	--padding-vertical: 0rem;
-	--spacing: 1rem;
-	padding: var(--padding-vertical) var(--padding-horizontal);
-}
-
-#container01.default > .wrapper > .inner > * {
-	margin-bottom: var(--spacing);
-	margin-top: var(--spacing);
-}
-
-#container01.default > .wrapper > .inner > *:first-child {
-	margin-top: 0 !important;
-}
-
-#container01.default > .wrapper > .inner > *:last-child {
-	margin-bottom: 0 !important;
-}
-
-#container01.columns > .wrapper > .inner {
-	flex-wrap: wrap;
-	display: flex;
-	align-items: center;
-}
-
-#container01.columns > .wrapper > .inner > * {
-	flex-grow: 0;
-	flex-shrink: 0;
-	max-width: 100%;
-	text-align: var(--alignment);
-	padding: 0 0 0 var(--gutters);
-}
-
-#container01.columns > .wrapper > .inner > * > * {
-	margin-bottom: var(--spacing);
-	margin-top: var(--spacing);
-}
-
-#container01.columns > .wrapper > .inner > * > *:first-child {
-	margin-top: 0 !important;
-}
-
-#container01.columns > .wrapper > .inner > * > *:last-child {
-	margin-bottom: 0 !important;
-}
-
-#container01.columns > .wrapper > .inner > *:first-child {
-	margin-left: calc(var(--gutters) * -1);
-}
-
-#container01.default > .wrapper > .inner > .full {
-	margin-left: calc(var(--padding-horizontal) * -1);
-	max-width: none !important;
-	width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-}
-
-#container01.default > .wrapper > .inner > .full:first-child {
-	margin-top: calc(var(--padding-vertical) * -1) !important;
-	border-top-left-radius: inherit;
-	border-top-right-radius: inherit;
-}
-
-#container01.default > .wrapper > .inner > .full:last-child {
-	margin-bottom: calc(var(--padding-vertical) * -1) !important;
-	border-bottom-left-radius: inherit;
-	border-bottom-right-radius: inherit;
-}
-
-#container01.columns > .wrapper > .inner > div > .full {
-	margin-left: calc(var(--gutters) * -0.5);
-	max-width: none !important;
-	width: calc(100% + var(--gutters) + 0.4725px);
-}
-
-#container01.columns > .wrapper > .inner > div:first-child > .full {
-	margin-left: calc(var(--padding-horizontal) * -1);
-	width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
-}
-
-#container01.columns > .wrapper > .inner > div:last-child > .full {
-	width: calc(100% + var(--padding-horizontal) + calc(var(--gutters) * 0.5) + 0.4725px);
-}
-
-#container01.columns > .wrapper > .inner > div > .full:first-child {
-	margin-top: calc(var(--padding-vertical) * -1) !important;
-}
-
-#container01.columns > .wrapper > .inner > div > .full:last-child {
-	margin-bottom: calc(var(--padding-vertical) * -1) !important;
-}
-
-#container01.columns > .wrapper > .inner > .full {
-	align-self: stretch;
-}
-
-#container01.columns > .wrapper > .inner > .full:first-child {
-	border-bottom-left-radius: inherit;
-	border-top-left-radius: inherit;
-}
-
-#container01.columns > .wrapper > .inner > .full:last-child {
-	border-bottom-right-radius: inherit;
-	border-top-right-radius: inherit;
-}
-
-#container01.columns > .wrapper > .inner > .full > .full:first-child:last-child {
-	border-radius: inherit;
-	height: calc(100% + (var(--padding-vertical) * 2));
-}
-
-#container01.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
-	border-radius: inherit;
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
-
 #columns04 {
 	--alignment: center;
 	--flex-alignment: center;
@@ -936,7 +789,6 @@ hr:before {
 
 #gallery02 ul li .thumbnail {
 	display: block;
-	transition: none;
 }
 
 #gallery02 ul li img {
@@ -945,7 +797,11 @@ hr:before {
 }
 
 #gallery02 ul li .thumbnail img {
-	transition: none;
+	transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+#gallery02 ul li .thumbnail:hover img {
+	transform: scale(1.1125);
 }
 
 .buttons {
@@ -958,6 +814,7 @@ hr:before {
 
 .buttons li {
 	max-width: 100%;
+	text-align: var(--alignment);
 }
 
 .buttons li a {
@@ -1097,7 +954,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	width: calc(100% + 0.025rem);
 	font-size: 0.75em;
 	line-height: 1.75;
-	font-weight: 200;
+	font-weight: 700;
 }
 
 #text04 a {
@@ -1247,18 +1104,6 @@ th {
 		width: 32rem;
 	}
 	
-	#divider01:not(:first-child) {
-		margin-top: 1.5rem !important;
-	}
-	
-	#divider01:not(:last-child) {
-		margin-bottom: 1.5rem !important;
-	}
-	
-	#divider01:before {
-		width: 32rem;
-	}
-	
 	#columns03 {
 		--alignment: center;
 		--flex-alignment: center;
@@ -1352,104 +1197,6 @@ th {
 	}
 	
 	#columns03.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
-		height: auto;
-		position: relative;
-		width: auto;
-	}
-	
-	#container01 {
-		--alignment: center;
-		--flex-alignment: center;
-		--indent-left: 1;
-		--indent-right: 1;
-	}
-	
-	#container01 > .wrapper > .inner {
-		--gutters: 2.25rem;
-		--padding-horizontal: 0rem;
-		--padding-vertical: 0rem;
-		--spacing: 1rem;
-	}
-	
-	#container01.columns > .wrapper > .inner {
-		flex-direction: column !important;
-		flex-wrap: nowrap !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > span {
-		height: 0;
-		margin-top: calc(var(--gutters) * -1);
-		pointer-events: none;
-		visibility: hidden;
-	}
-	
-	#container01.columns > .wrapper > .inner > *:first-child {
-		margin-left: 0 !important;
-		padding-top: 0 !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > * {
-		padding: calc(var(--gutters) * 0.5) 0 !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > *:last-child {
-		padding-bottom: 0 !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div > .full {
-		margin-left: calc(var(--padding-horizontal) * -1);
-		width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-	}
-	
-	#container01.columns > .wrapper > .inner > div:first-of-type > .full {
-		margin-left: calc(var(--padding-horizontal) * -1);
-		width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-	}
-	
-	#container01.columns > .wrapper > .inner > div:last-of-type > .full {
-		margin-left: calc(var(--padding-horizontal) * -1);
-		width: calc(100% + (var(--padding-horizontal) * 2) + 0.4725px);
-	}
-	
-	#container01.columns > .wrapper > .inner > div > .full:first-child {
-		margin-top: calc(var(--gutters) * -0.5) !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div > .full:last-child {
-		margin-bottom: calc(var(--gutters) * -0.5) !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
-		margin-top: calc(var(--padding-vertical) * -1) !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
-		margin-bottom: calc(var(--padding-vertical) * -1) !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:first-of-type, #container01.columns > .wrapper > .inner > div:first-of-type > .full:first-child {
-		border-top-left-radius: inherit;
-		border-top-right-radius: inherit;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:last-of-type, #container01.columns > .wrapper > .inner > div:last-of-type > .full:last-child {
-		border-bottom-left-radius: inherit;
-		border-bottom-right-radius: inherit;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:first-of-type, #container01.columns > .wrapper > .inner > div:first-of-type > .full:last-child {
-		border-bottom-left-radius: 0 !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > div:last-of-type, #container01.columns > .wrapper > .inner > div:last-of-type > .full:first-child {
-		border-top-right-radius: 0 !important;
-	}
-	
-	#container01.columns > .wrapper > .inner > .full > .full:first-child:last-child {
-		height: auto;
-	}
-	
-	#container01.columns > .wrapper > .inner > .full > .full:first-child:last-child > * {
 		height: auto;
 		position: relative;
 		width: auto;
@@ -1630,10 +1377,6 @@ th {
 		--spacing: 0.875rem;
 	}
 	
-	#container01 > .wrapper > .inner {
-		--spacing: 0.875rem;
-	}
-	
 	#columns04 > .wrapper > .inner {
 		--spacing: 0.875rem;
 	}
@@ -1689,13 +1432,6 @@ th {
 	}
 	
 	#columns03 > .wrapper > .inner {
-		--gutters: 2.25rem;
-		--padding-horizontal: 0rem;
-		--padding-vertical: 0rem;
-		--spacing: 0.75rem;
-	}
-	
-	#container01 > .wrapper > .inner {
 		--gutters: 2.25rem;
 		--padding-horizontal: 0rem;
 		--padding-vertical: 0rem;
