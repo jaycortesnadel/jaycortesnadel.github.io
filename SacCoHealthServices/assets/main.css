@@ -367,7 +367,7 @@ body.is-instant:after {
 
 .image.style1 .frame {
 	max-width: 100%;
-	width: 89px;
+	width: auto;
 	transition: none;
 }
 
@@ -1531,6 +1531,37 @@ hr:before {
 	transform: scale(1.1125);
 }
 
+#gallery07 .inner {
+	max-width: 100%;
+}
+
+#gallery07 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery07 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery07 ul {
+	gap: 0.5rem;
+}
+
+#gallery07 ul li .thumbnail {
+	display: block;
+	transition: none;
+}
+
+#gallery07 ul li img {
+	height: auto;
+	max-height: 31.125rem;
+}
+
+#gallery07 ul li .thumbnail img {
+	transition: none;
+}
+
 .table-wrapper {
 	max-width: 100%;
 	-webkit-overflow-scrolling: touch;
@@ -2300,6 +2331,10 @@ th {
 		max-height: 9rem;
 	}
 	
+	#gallery07 ul li img {
+		max-height: 23.34375rem;
+	}
+	
 	#table02 {
 		letter-spacing: 0.021875rem;
 		font-size: 0.75em;
@@ -2643,6 +2678,10 @@ th {
 	}
 	
 	#gallery01 ul {
+		gap: 0.375rem;
+	}
+	
+	#gallery07 ul {
 		gap: 0.375rem;
 	}
 	

@@ -2665,5 +2665,15 @@
 			mobileNavigation: true,
 			scheme: 'dark',
 		});
+	
+	// Gallery: gallery07.
+		_lightboxGallery.init({
+			id: 'gallery07',
+			navigation: true,
+			captions: false,
+			mobile: true,
+			mobileNavigation: true,
+			scheme: 'dark',
+		});
 
 })();
