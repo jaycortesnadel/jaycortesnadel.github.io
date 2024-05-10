@@ -2092,6 +2092,96 @@
 						this.style.filter = 'none';
 					},
 				},
+				'wipe-up': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(0deg, black 100%, transparent 100%)';
+						this.style.maskPosition = '0% 100%';
+						this.style.maskSize = '100% 0%';
+					},
+					play: function() {
+						this.style.maskSize = '110% 110%';
+					},
+				},
+				'wipe-down': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(0deg, black 100%, transparent 100%)';
+						this.style.maskPosition = '0% 0%';
+						this.style.maskSize = '100% 0%';
+					},
+					play: function() {
+						this.style.maskSize = '110% 110%';
+					},
+				},
+				'wipe-left': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(90deg, black 100%, transparent 100%)';
+						this.style.maskPosition = '100% 0%';
+						this.style.maskSize = '0% 100%';
+					},
+					play: function() {
+						this.style.maskSize = '110% 110%';
+					},
+				},
+				'wipe-right': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(90deg, black 100%, transparent 100%)';
+						this.style.maskPosition = '0% 0%';
+						this.style.maskSize = '0% 100%';
+					},
+					play: function() {
+						this.style.maskSize = '110% 110%';
+					},
+				},
+				'wipe-diagonal': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(45deg, black 50%, transparent 50%)';
+						this.style.maskPosition = '0% 100%';
+						this.style.maskSize = '0% 0%';
+					},
+					play: function() {
+						this.style.maskSize = '220% 220%';
+					},
+				},
+				'wipe-reverse-diagonal': {
+					transition: function (speed, delay) {
+						return	'mask-size ' + speed + 's ease' + (delay ? ' ' + delay + 's' : '');
+					},
+					rewind: function(intensity) {
+						this.style.maskComposite = 'exclude';
+						this.style.maskRepeat = 'no-repeat';
+						this.style.maskImage = 'linear-gradient(135deg, transparent 50%, black 50%)';
+						this.style.maskPosition = '100% 100%';
+						this.style.maskSize = '0% 0%';
+					},
+					play: function() {
+						this.style.maskSize = '220% 220%';
+					},
+				},
 			},
 		
 			/**
