@@ -380,7 +380,7 @@ body.is-instant:after {
 
 #image03 .frame {
 	max-width: 100%;
-	width: auto;
+	width: 66px;
 	transition: none;
 }
 
