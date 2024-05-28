@@ -515,7 +515,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text03 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
 	font-size: 1.375em;
@@ -538,10 +538,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text01 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
-	font-size: 0.75em;
+	font-size: 1.375em;
 	line-height: 2.5;
 	font-weight: 400;
 }
@@ -561,10 +561,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text02 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
-	font-size: 0.75em;
+	font-size: 1.375em;
 	line-height: 2.5;
 	font-weight: 400;
 }
@@ -584,10 +584,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #text05 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	width: calc(100% + 0.125rem);
-	font-size: 0.75em;
+	font-size: 1.375em;
 	line-height: 2.5;
 	font-weight: 400;
 }
@@ -741,10 +741,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 2.5rem;
 	padding: 0 1.25rem;
 	vertical-align: middle;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	padding-left: calc(0.125rem + 1.25rem);
-	font-size: 0.75em;
+	font-size: 1.25em;
 	font-weight: 400;
 	border-radius: 0rem;
 	direction: var(--site-language-direction);
@@ -771,10 +771,10 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	line-height: 2.5rem;
 	padding: 0 1.25rem;
 	vertical-align: middle;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.125rem;
 	padding-left: calc(0.125rem + 1.25rem);
-	font-size: 0.75em;
+	font-size: 1.25em;
 	font-weight: 400;
 	border-radius: 0rem;
 	direction: var(--site-language-direction);
@@ -814,9 +814,9 @@ th {
 #table01 {
 	text-align: center;
 	color: #000000;
-	font-family: 'Press Start 2P', monospace;
+	font-family: 'Times New Roman', serif;
 	letter-spacing: 0.025rem;
-	font-size: 0.625em;
+	font-size: 0.875em;
 	line-height: 1.5;
 	font-weight: 400;
 }
@@ -1165,21 +1165,21 @@ th {
 	#text01 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
-		font-size: 0.75em;
+		font-size: 1.375em;
 		line-height: 2.5;
 	}
 	
 	#text02 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
-		font-size: 0.75em;
+		font-size: 1.375em;
 		line-height: 2.5;
 	}
 	
 	#text05 {
 		letter-spacing: 0.109375rem;
 		width: calc(100% + 0.109375rem);
-		font-size: 0.75em;
+		font-size: 1.375em;
 		line-height: 2.5;
 	}
 	
@@ -1201,7 +1201,7 @@ th {
 	#buttons03 li a {
 		letter-spacing: 0.125rem;
 		padding-left: calc(0.125rem + 1.25rem);
-		font-size: 0.75em;
+		font-size: 1.25em;
 	}
 	
 	#buttons02 {
@@ -1211,12 +1211,12 @@ th {
 	#buttons02 li a {
 		letter-spacing: 0.125rem;
 		padding-left: calc(0.125rem + 1.25rem);
-		font-size: 0.75em;
+		font-size: 1.25em;
 	}
 	
 	#table01 {
 		letter-spacing: 0.021875rem;
-		font-size: 0.625em;
+		font-size: 0.875em;
 		line-height: 1.5;
 	}
 	
@@ -1391,15 +1391,15 @@ th {
 	}
 	
 	#text01 {
-		font-size: 0.75em;
+		font-size: 1.375em;
 	}
 	
 	#text02 {
-		font-size: 0.75em;
+		font-size: 1.375em;
 	}
 	
 	#text05 {
-		font-size: 0.75em;
+		font-size: 1.375em;
 	}
 	
 	#text04 {
@@ -1419,7 +1419,7 @@ th {
 	}
 	
 	#table01 {
-		font-size: 0.625em;
+		font-size: 0.875em;
 	}
 	
 	#columns04 > .wrapper > .inner {
