@@ -862,7 +862,7 @@
 								locked = true;
 		
 							// Clear index URL hash.
-								if (location.hash == '#home')
+								if (location.hash == '#intro')
 									history.replaceState(null, null, '#');
 		
 						// Get options.
@@ -1055,7 +1055,7 @@
 								id = section.id.replace(/-section$/, '');
 		
 								// Index section? Clear.
-									if (id == 'home')
+									if (id == 'intro')
 										id = '';
 		
 							// Reset hash to section name (via new state).
@@ -1095,7 +1095,7 @@
 							}
 		
 						// Section.
-							else if (e = $('#' + (h ? h : 'home') + '-section')) {
+							else if (e = $('#' + (h ? h : 'intro') + '-section')) {
 		
 								initialScrollPoint = null;
 								initialSection = e;
@@ -1108,7 +1108,7 @@
 		
 								// Default to index.
 									initialScrollPoint = null;
-									initialSection = $('#' + 'home' + '-section');
+									initialSection = $('#' + 'intro' + '-section');
 									initialId = initialSection.id;
 		
 								// Clear index URL hash.
@@ -1117,7 +1117,7 @@
 							}
 		
 					// Get options.
-						name = (h ? h : 'home');
+						name = (h ? h : 'intro');
 						hideHeader = name ? ((name in sections) && ('hideHeader' in sections[name]) && sections[name].hideHeader) : false;
 						hideFooter = name ? ((name in sections) && ('hideFooter' in sections[name]) && sections[name].hideFooter) : false;
 						disableAutoScroll = name ? ((name in sections) && ('disableAutoScroll' in sections[name]) && sections[name].disableAutoScroll) : false;
@@ -1204,7 +1204,7 @@
 							}
 		
 						// Section.
-							else if (e = $('#' + (h ? h : 'home') + '-section')) {
+							else if (e = $('#' + (h ? h : 'intro') + '-section')) {
 		
 								scrollPoint = null;
 								section = e;
@@ -1216,7 +1216,7 @@
 		
 								// Default to index.
 									scrollPoint = null;
-									section = $('#' + 'home' + '-section');
+									section = $('#' + 'intro' + '-section');
 		
 								// Clear index URL hash.
 									history.replaceState(undefined, undefined, '#');
@@ -2518,6 +2518,7 @@
 		};
 	
 	// Initialize "On Visible" animations.
+		onvisible.add('#text06', { style: 'zoom-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 		onvisible.add('#text03', { style: 'zoom-in', speed: 1000, intensity: 5, threshold: 3, delay: 0, replay: false });
 
 })();
