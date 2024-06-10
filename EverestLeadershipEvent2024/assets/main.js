@@ -204,6 +204,30 @@
 				return a;
 		
 			},
+			escapeHtml = function(s) {
+		
+				// Blank, null, or undefined? Return blank string.
+					if (s === ''
+					||	s === null
+					||	s === undefined)
+						return '';
+		
+				// Escape HTML characters.
+					var a = {
+						'&': '&amp;',
+						'<': '&lt;',
+						'>': '&gt;',
+						'"': '&quot;',
+						"'": '&#39;',
+					};
+		
+					s = s.replace(/[&<>"']/g, function(x) {
+						return a[x];
+					});
+		
+				return s;
+		
+			},
 			thisHash = function() {
 		
 				var h = location.hash ? location.hash.substring(1) : null,
@@ -2606,9 +2630,19 @@
 		
 		var _lightboxGallery = new lightboxGallery;
 	
-	// Gallery: gallery03.
+	// Gallery: gallery04.
 		_lightboxGallery.init({
-			id: 'gallery03',
+			id: 'gallery04',
+			navigation: true,
+			captions: false,
+			mobile: true,
+			mobileNavigation: true,
+			scheme: 'dark',
+		});
+	
+	// Gallery: gallery01.
+		_lightboxGallery.init({
+			id: 'gallery01',
 			navigation: true,
 			captions: false,
 			mobile: true,
@@ -2626,9 +2660,9 @@
 			scheme: 'dark',
 		});
 	
-	// Gallery: gallery01.
+	// Gallery: gallery03.
 		_lightboxGallery.init({
-			id: 'gallery01',
+			id: 'gallery03',
 			navigation: true,
 			captions: false,
 			mobile: true,

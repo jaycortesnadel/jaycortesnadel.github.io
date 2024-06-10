@@ -505,7 +505,7 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
-#text08 {
+#text09 {
 	color: #2F2E3B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
@@ -513,15 +513,35 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	font-weight: 300;
 }
 
-#text08 a {
+#text09 a {
 	text-decoration: underline;
 }
 
-#text08 a:hover {
+#text09 a:hover {
 	text-decoration: none;
 }
 
-#text08 span.p:nth-child(n + 2) {
+#text09 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text07 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text07 a {
+	text-decoration: underline;
+}
+
+#text07 a:hover {
+	text-decoration: none;
+}
+
+#text07 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -545,6 +565,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	margin-top: 1rem;
 }
 
+#text08 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text08 a {
+	text-decoration: underline;
+}
+
+#text08 a:hover {
+	text-decoration: none;
+}
+
+#text08 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
 #text04 {
 	color: #2F2E3B;
 	font-family: 'Roboto', sans-serif;
@@ -562,6 +602,26 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 }
 
 #text04 span.p:nth-child(n + 2) {
+	margin-top: 1rem;
+}
+
+#text03 {
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#text03 a {
+	text-decoration: underline;
+}
+
+#text03 a:hover {
+	text-decoration: none;
+}
+
+#text03 span.p:nth-child(n + 2) {
 	margin-top: 1rem;
 }
 
@@ -628,6 +688,78 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	white-space: nowrap;
 }
 
+#buttons01 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons01:not(:first-child) {
+	margin-top: 1.375rem !important;
+}
+
+#buttons01:not(:last-child) {
+	margin-bottom: 1.375rem !important;
+}
+
+#buttons01 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons01 .button {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#buttons03 {
+	gap: 0.75rem;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#buttons03:not(:first-child) {
+	margin-top: 1.375rem !important;
+}
+
+#buttons03:not(:last-child) {
+	margin-bottom: 1.375rem !important;
+}
+
+#buttons03 li a {
+	display: inline-block;
+	width: auto;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	border-radius: 0.375rem;
+	direction: var(--site-language-direction);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+#buttons03 .button {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
 #buttons02 {
 	gap: 0.75rem;
 	flex-direction: row;
@@ -645,9 +777,9 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 #buttons02 li a {
 	display: inline-block;
 	width: auto;
-	height: 2.5rem;
-	line-height: 2.5rem;
-	padding: 0 1.25rem;
+	height: 1.875rem;
+	line-height: 1.875rem;
+	padding: 0 0.9375rem;
 	vertical-align: middle;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
@@ -1560,34 +1692,65 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	opacity: 0.375;
 }
 
-#gallery03 .inner {
+#gallery04 .inner {
 	max-width: 15rem;
 }
 
-#gallery03 ul li {
+#gallery04 ul li {
 	border-radius: 0rem;
 	display: inline-block;
 }
 
-#gallery03 ul li .frame {
+#gallery04 ul li .frame {
 	border-radius: 0rem;
 }
 
-#gallery03 ul {
-	gap: 0.75rem;
+#gallery04 ul {
+	gap: 1rem;
 }
 
-#gallery03 ul li .thumbnail {
+#gallery04 ul li .thumbnail {
 	display: block;
 	transition: none;
 }
 
-#gallery03 ul li img {
+#gallery04 ul li img {
 	height: auto;
-	max-height: 23.25rem;
+	max-height: 20rem;
 }
 
-#gallery03 ul li .thumbnail img {
+#gallery04 ul li .thumbnail img {
+	transition: none;
+}
+
+#gallery01 .inner {
+	max-width: 15rem;
+}
+
+#gallery01 ul li {
+	border-radius: 0rem;
+	display: inline-block;
+}
+
+#gallery01 ul li .frame {
+	border-radius: 0rem;
+}
+
+#gallery01 ul {
+	gap: 1rem;
+}
+
+#gallery01 ul li .thumbnail {
+	display: block;
+	transition: none;
+}
+
+#gallery01 ul li img {
+	height: auto;
+	max-height: 20rem;
+}
+
+#gallery01 ul li .thumbnail img {
 	transition: none;
 }
 
@@ -1622,35 +1785,163 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	transition: none;
 }
 
-#gallery01 .inner {
+#gallery03 .inner {
 	max-width: 15rem;
 }
 
-#gallery01 ul li {
+#gallery03 ul li {
 	border-radius: 0rem;
 	display: inline-block;
 }
 
-#gallery01 ul li .frame {
+#gallery03 ul li .frame {
 	border-radius: 0rem;
 }
 
-#gallery01 ul {
-	gap: 1rem;
+#gallery03 ul {
+	gap: 0.75rem;
 }
 
-#gallery01 ul li .thumbnail {
+#gallery03 ul li .thumbnail {
 	display: block;
 	transition: none;
 }
 
-#gallery01 ul li img {
+#gallery03 ul li img {
 	height: auto;
-	max-height: 23.25rem;
+	max-height: 50rem;
 }
 
-#gallery01 ul li .thumbnail img {
+#gallery03 ul li .thumbnail img {
 	transition: none;
+}
+
+hr {
+	align-items: center;
+	border: 0;
+	display: flex;
+	justify-content: var(--flex-alignment);
+	min-height: 1rem;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+hr:before {
+	content: '';
+}
+
+#divider01:before {
+	width: 100%;
+	background-color: #2F2E3B;
+	height: 1px;
+	border-radius: 0px;
+}
+
+#divider02:before {
+	width: 100%;
+	background-color: #2F2E3B;
+	height: 1px;
+	border-radius: 0px;
+}
+
+.table-wrapper {
+	max-width: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.table-inner {
+	display: inline-block;
+	max-width: 100%;
+}
+
+table {
+	direction: var(--site-language-direction);
+	text-align: var(--site-language-alignment);
+	width: 100%;
+}
+
+th {
+	font-weight: bolder;
+	text-align: var(--site-language-alignment);
+}
+
+#table02 {
+	text-align: center;
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#table02 table {
+	text-align: center;
+}
+
+#table02 th {
+	text-align: center;
+}
+
+#table02 a {
+	text-decoration: underline;
+}
+
+#table02 a:hover {
+	text-decoration: none;
+}
+
+#table02 .table-inner {
+	width: 42rem;
+}
+
+#table02 thead {
+	background-color: rgba(47,46,59,0.184);
+}
+
+#table02 th, #table02 td {
+	border: solid 1px #2F2E3B;
+	padding: 0.5rem 0.6875rem;
+}
+
+#table01 {
+	text-align: center;
+	color: #2F2E3B;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.625;
+	font-weight: 300;
+}
+
+#table01 table {
+	text-align: center;
+}
+
+#table01 th {
+	text-align: center;
+}
+
+#table01 a {
+	text-decoration: underline;
+}
+
+#table01 a:hover {
+	text-decoration: none;
+}
+
+#table01 .table-inner {
+	width: 42rem;
+}
+
+#table01 thead {
+	background-color: rgba(47,46,59,0.184);
+}
+
+#table01 th, #table01 td {
+	border: solid 1px #2F2E3B;
+	padding: 0.5rem 0.6875rem;
 }
 
 @media (orientation: portrait) {
@@ -1797,7 +2088,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.625;
 	}
 	
-	#text08 {
+	#text09 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#text07 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1em;
@@ -1811,7 +2109,21 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		line-height: 1.625;
 	}
 	
+	#text08 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
 	#text04 {
+		letter-spacing: 0rem;
+		width: 100%;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#text03 {
 		letter-spacing: 0rem;
 		width: 100%;
 		font-size: 1em;
@@ -1830,6 +2142,40 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: 100%;
 		font-size: 1.125em;
 		line-height: 1.625;
+	}
+	
+	#buttons01 {
+		gap: 0.75rem;
+	}
+	
+	#buttons01:not(:first-child) {
+		margin-top: 1.03125rem !important;
+	}
+	
+	#buttons01:not(:last-child) {
+		margin-bottom: 1.03125rem !important;
+	}
+	
+	#buttons01 li a {
+		letter-spacing: 0rem;
+		font-size: 1em;
+	}
+	
+	#buttons03 {
+		gap: 0.75rem;
+	}
+	
+	#buttons03:not(:first-child) {
+		margin-top: 1.03125rem !important;
+	}
+	
+	#buttons03:not(:last-child) {
+		margin-bottom: 1.03125rem !important;
+	}
+	
+	#buttons03 li a {
+		letter-spacing: 0rem;
+		font-size: 1em;
 	}
 	
 	#buttons02 {
@@ -2280,22 +2626,74 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		background-position: top 0.5rem right 0.5rem;
 	}
 	
-	#gallery03 ul li img {
-		max-height: 17.4375rem;
+	#gallery04 ul li img {
+		max-height: 15rem;
+	}
+	
+	#gallery01 ul li img {
+		max-height: 15rem;
 	}
 	
 	#gallery02 ul li img {
 		max-height: 16.6875rem;
 	}
 	
-	#gallery01 ul li img {
-		max-height: 17.4375rem;
+	#gallery03 ul li img {
+		max-height: 37.5rem;
+	}
+	
+	#divider01:before {
+		width: 100rem;
+	}
+	
+	#divider02:before {
+		width: 100rem;
+	}
+	
+	#table02 {
+		letter-spacing: 0rem;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#table02 th, #table02 td {
+		padding: 0.5rem 0.6875rem;
+	}
+	
+	#table01 {
+		letter-spacing: 0rem;
+		font-size: 1em;
+		line-height: 1.625;
+	}
+	
+	#table01 th, #table01 td {
+		padding: 0.5rem 0.6875rem;
 	}
 }
 
 @media (max-width: 480px) {
 	#main > .inner {
 		--spacing: 0.875rem;
+	}
+	
+	#buttons01 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons01 li a {
+		max-width: 32rem;
+		width: 100%;
+	}
+	
+	#buttons03 {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	
+	#buttons03 li a {
+		max-width: 32rem;
+		width: 100%;
 	}
 	
 	#buttons02 {
@@ -2354,7 +2752,11 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1em;
 	}
 	
-	#text08 {
+	#text09 {
+		font-size: 1em;
+	}
+	
+	#text07 {
 		font-size: 1em;
 	}
 	
@@ -2362,7 +2764,15 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		font-size: 1em;
 	}
 	
+	#text08 {
+		font-size: 1em;
+	}
+	
 	#text04 {
+		font-size: 1em;
+	}
+	
+	#text03 {
 		font-size: 1em;
 	}
 	
@@ -2372,6 +2782,14 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#text02 {
 		font-size: 1.125em;
+	}
+	
+	#buttons01 {
+		gap: 0.5625rem;
+	}
+	
+	#buttons03 {
+		gap: 0.5625rem;
 	}
 	
 	#buttons02 {
@@ -2399,15 +2817,27 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		--spacing: 0.75rem;
 	}
 	
-	#gallery03 ul {
-		gap: 0.5625rem;
+	#gallery04 ul {
+		gap: 0.75rem;
+	}
+	
+	#gallery01 ul {
+		gap: 0.75rem;
 	}
 	
 	#gallery02 ul {
 		gap: 0.75rem;
 	}
 	
-	#gallery01 ul {
-		gap: 0.75rem;
+	#gallery03 ul {
+		gap: 0.5625rem;
+	}
+	
+	#table02 {
+		font-size: 1em;
+	}
+	
+	#table01 {
+		font-size: 1em;
 	}
 }
