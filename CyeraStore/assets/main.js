@@ -204,6 +204,30 @@
 				return a;
 		
 			},
+			escapeHtml = function(s) {
+		
+				// Blank, null, or undefined? Return blank string.
+					if (s === ''
+					||	s === null
+					||	s === undefined)
+						return '';
+		
+				// Escape HTML characters.
+					var a = {
+						'&': '&amp;',
+						'<': '&lt;',
+						'>': '&gt;',
+						'"': '&quot;',
+						"'": '&#39;',
+					};
+		
+					s = s.replace(/[&<>"']/g, function(x) {
+						return a[x];
+					});
+		
+				return s;
+		
+			},
 			thisHash = function() {
 		
 				var h = location.hash ? location.hash.substring(1) : null,
