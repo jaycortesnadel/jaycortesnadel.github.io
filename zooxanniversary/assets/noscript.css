@@ -11,7 +11,7 @@ body:before {
 	width: 100vw;
 	z-index: 0;
 	background-image: url('videos/bg.mp4.jpg');
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
