@@ -413,37 +413,6 @@ hr:before {
 	pointer-events: auto;
 }
 
-#gallery02 .inner {
-	max-width: 100%;
-}
-
-#gallery02 ul li {
-	border-radius: 0rem;
-	display: inline-block;
-}
-
-#gallery02 ul li .frame {
-	border-radius: 0rem;
-}
-
-#gallery02 ul {
-	gap: 0.5rem;
-}
-
-#gallery02 ul li .thumbnail {
-	display: block;
-	transition: none;
-}
-
-#gallery02 ul li img {
-	height: auto;
-	max-height: 15.875rem;
-}
-
-#gallery02 ul li .thumbnail img {
-	transition: none;
-}
-
 #gallery01 .inner {
 	max-width: 100%;
 }
@@ -468,7 +437,7 @@ hr:before {
 
 #gallery01 ul li img {
 	height: auto;
-	max-height: 10rem;
+	max-height: 16rem;
 }
 
 #gallery01 ul li .thumbnail img {
@@ -784,12 +753,8 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 		width: 59rem;
 	}
 	
-	#gallery02 ul li img {
-		max-height: 11.90625rem;
-	}
-	
 	#gallery01 ul li img {
-		max-height: 7.5rem;
+		max-height: 12rem;
 	}
 	
 	#text05 {
@@ -948,10 +913,6 @@ h1 span[style], h2 span[style], h3 span[style], p span[style], h1 strong, h2 str
 	
 	#main > .inner > footer > .full:last-child {
 		margin-bottom: -2.34375rem !important;
-	}
-	
-	#gallery02 ul {
-		gap: 0.375rem;
 	}
 	
 	#gallery01 ul {
